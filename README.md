@@ -4,5 +4,5 @@ Este repositorio contiene todos los proyectos creados durante mi aprendizaje en 
 
 ## Proyectos
 
-- [Cafe Menu](cafe-menu): Ejercicio básico de HTML y CSS para maquetar un menú sencillo.
+- [Cafe Menu](html-css/cafe-menu): Ejercicio básico de HTML y CSS para maquetar un menú sencillo.
 - [Colored Markers](colored-markers): Aprendí a usar colores gradientes, opacidades y más en CSS.
