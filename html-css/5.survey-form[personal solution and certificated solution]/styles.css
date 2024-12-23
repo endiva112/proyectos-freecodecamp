@@ -1,0 +1,24 @@
+body {
+    /*Ancho de la página*/
+    width: 100%;
+    margin: 0;
+    
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/2038496941153106324/F4FDA0F7A49B8271E42BF786C9AD77D8BA268099/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: Tahoma;
+    font-size: 16px;
+    color: #f5f6f7;
+}
+
+section {
+    background-color: darkblue;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+/**

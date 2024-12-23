@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SurveyForm_Frostpunk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h1 id="title">Frostpunk</h1>
+        <p id="description">Este es un formulario para los jugadores de Frostpunk</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">A</label>
+                <input id="name" type="text" placeholder="a" required />
+                <label id="email-label">A</label>
+                <input id="email" type="email" placeholder="a" required/>
+                <label id="number-label">A</label>
+                <input id="number" type="number" min="1" max="10" placeholder="a"/>
+            </fieldset>
+                <select id ="dropdown">
+                    <option>A</option>
+                    <option>A</option>
+                    <option>A</option>
+                </select>
+                <input type="radio" name="ley-orden" value="ley"/>
+                <input type="radio" name="ley-orden" value="orden"/>
+                
+                <label></label>
+                <input type="checkbox" value="a"/>
+                <input type="checkbox" value="b"/>
+                
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="La ciudad debe sobrevivir..."></textarea>
+                <input type="submit" id="submit"/>
+            </form>
+        </section>
+    </body>
+    </html>
