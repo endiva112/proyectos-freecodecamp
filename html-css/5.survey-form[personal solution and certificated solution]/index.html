@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>SurveyForm_Frostpunk</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylees.css">
 </head>
 <body>
     <section>
@@ -11,28 +11,35 @@
         <p id="description">Este es un formulario para los jugadores de Frostpunk</p>
         <form id="survey-form">
             <fieldset>
-                <label id="name-label">A</label>
-                <input id="name" type="text" placeholder="a" required />
-                <label id="email-label">A</label>
-                <input id="email" type="email" placeholder="a" required/>
-                <label id="number-label">A</label>
-                <input id="number" type="number" min="1" max="10" placeholder="a"/>
+                <legend>Hablanos de ti</legend>
+                <label for="name" id="name-label">¿Cómo se llama tu usuario de Steam?
+                    <input id="name" type="text" placeholder="a" required />
+                </label>
+                <label for="email" id="email-label">¿Cuál es tu correo?
+                    <input id="email" type="email" placeholder="a" required/>
+                </label>
+                <label for="number" id="number-label">¿Qué edad tienes?
+                    <input id="number" type="number" min="1" max="10" placeholder="a"/>
+                </label>
             </fieldset>
+            <fieldset>
+                <legend>¿Qué opinas del juego?</legend>
                 <select id ="dropdown">
-                    <option>A</option>
-                    <option>A</option>
-                    <option>A</option>
+                    <option value="">(selecciona)</option>
+                    <option value="1">No me gustó</option>
+                    <option value="2">Estuvo decente</option>
+                    <option value="3">Me encantó</option>
                 </select>
-                <input type="radio" name="ley-orden" value="ley"/>
-                <input type="radio" name="ley-orden" value="orden"/>
+                <label for="personal-account"><input type="radio" name="ley-orden" value="ley"/> Ley</label>
+                <label for="personal-account"><input type="radio" name="ley-orden" value="orden"/> Orden</label>
                 
                 <label></label>
                 <input type="checkbox" value="a"/>
                 <input type="checkbox" value="b"/>
-                
                 <textarea id="bio" name="bio" rows="3" cols="30" placeholder="La ciudad debe sobrevivir..."></textarea>
-                <input type="submit" id="submit"/>
-            </form>
-        </section>
-    </body>
-    </html>
+            </fieldset>
+            <input type="submit" id="submit"/>
+        </form>
+    </section>
+</body>
+</html>

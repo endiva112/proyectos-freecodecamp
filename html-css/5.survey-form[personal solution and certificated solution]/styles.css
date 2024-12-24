@@ -12,13 +12,5 @@ body {
     color: #f5f6f7;
 }
 
-section {
-    background-color: darkblue;
-}
-
-h1, p {
-    margin: 1em auto;
-    text-align: center;
-}
 
 /**
