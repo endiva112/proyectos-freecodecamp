@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>SurveyForm_Frostpunk</title>
-    <link rel="stylesheet" href="stylees.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section>
@@ -13,13 +13,13 @@
             <fieldset>
                 <legend>Hablanos de ti</legend>
                 <label for="name" id="name-label">¿Cómo se llama tu usuario de Steam?
-                    <input id="name" type="text" placeholder="a" required />
+                    <input id="name" type="text" placeholder="Mr.Captain9" required />
                 </label>
                 <label for="email" id="email-label">¿Cuál es tu correo?
-                    <input id="email" type="email" placeholder="a" required/>
+                    <input id="email" type="email" placeholder="frostpunk@gmail.com" required/>
                 </label>
                 <label for="number" id="number-label">¿Qué edad tienes?
-                    <input id="number" type="number" min="1" max="10" placeholder="a"/>
+                    <input id="number" type="number" min="1" max="10" placeholder="19"/>
                 </label>
             </fieldset>
             <fieldset>
@@ -30,13 +30,22 @@
                     <option value="2">Estuvo decente</option>
                     <option value="3">Me encantó</option>
                 </select>
-                <label for="personal-account"><input type="radio" name="ley-orden" value="ley"/> Ley</label>
-                <label for="personal-account"><input type="radio" name="ley-orden" value="orden"/> Orden</label>
-                
-                <label></label>
-                <input type="checkbox" value="a"/>
-                <input type="checkbox" value="b"/>
-                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="La ciudad debe sobrevivir..."></textarea>
+                <label>¿Qué elección hiciste para salvar Nuevo Londres?</label>
+                <label for="ley">
+                    <input class="inline" id="ley" type="radio" name="ley-orden" value="ley"/> Ley
+                </label>
+                <label for="orden">
+                    <input class="inline" id="orden" type="radio" name="ley-orden" value="orden"/> Orden
+                </label>
+
+                <label for="dlcs">¿Qué DLCs has adquirido?</label>
+                <input class="inline" type="checkbox" value="a"/> Al límite
+                <input class="inline" type="checkbox" value="b"/> El último otoño
+                <input class="inline" type="checkbox" value="c"/> Las fosas
+            </fieldset>
+            <fieldset>
+                <legend>Haznos un comentario o dejanos una duda</legend>
+                <textarea id="bio" name="bio" rows="4" cols="30" placeholder="La ciudad debe sobrevivir..."></textarea>
             </fieldset>
             <input type="submit" id="submit"/>
         </form>
