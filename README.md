@@ -19,3 +19,5 @@ Este repositorio contiene todos los proyectos creados durante mi aprendizaje en 
 - [Photo Gallery](html-css/7.photo-gallery): Ejemplo de los usos de flex y flexwrap.
 
 - [Nutrition Label](html-css/8.nutrition-label): Ejercicio que hace enfases en el uso de la tipografía.
+
+- [Quiz](html-css/9.quizz): Proyecto enfocado a la accesibilidad de la página web. Se hacen uso de herramientas como atajos de teclado, atributos ARIA y mejores prácticas de diseño.
