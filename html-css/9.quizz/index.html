@@ -24,9 +24,18 @@
             <!--Para aumentar la accesibilidad de la página, se puede utilizar el atributo role para indicar el 
             propósito de un elemento de la página a las tecnologías de asistencia. El atributo role es parte de 
             la Iniciativa de Accesibilidad Web (WAI) y acepta valores preestablecidos.-->
-            <section role="region"></section>
-            <section role="region"></section>
-            <section role="region"></section>
+            <section role="region" aria-labelledby="student-info">
+                <!--Cada función de región requiere una etiqueta, que ayuda a los usuarios de lectores de pantalla 
+                a comprender el propósito de la región. Un método para agregar una etiqueta es agregar un elemento 
+                de encabezado dentro de la región y luego hacer referencia a él con el atributo aria-labelledby.-->
+                <h2 id="student-info">Student Info</h2>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+              <h2 id="html-questions">HTML</h2>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+              <h2 id="css-questions">CSS</h2>
+            </section>
         </main>
     </body>
 </html>
