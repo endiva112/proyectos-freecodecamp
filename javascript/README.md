@@ -8,4 +8,5 @@ cómo trabajar con almacenamiento local y cómo obtener datos mediante una API.
 
 ## Proyectos
 
-- [PENDING](#): Under development.
+- [Pyramid Generator](1.pyramid-generator): En este proyecto práctico, se hace uso de los conceptos fundamentales de programación en JavaScript para programar
+ un "Gemerador de Piramides". Se trabaja con arrays, strings, funciones, loops e instrucciones if/else entre otras cosas.
