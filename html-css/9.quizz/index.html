@@ -8,34 +8,67 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header><!--The header element will be used to introduce the page, as well as provide a navigation menu.-->
+    <header>
         <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-                <li><a>INFO</a></li>
-                <li><a>HTML</a></li>
-                <li><a>CSS</a></li>
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#html-questions">HTML</a></li>
+                <li><a href="#css-questions">CSS</a></li>
             </ul>
         </nav>
     </header>
-    <main><!--The main element will contain the core content of your page.-->
+    <main>
         <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-            <!--Para aumentar la accesibilidad de la página, se puede utilizar el atributo role para indicar el 
-            propósito de un elemento de la página a las tecnologías de asistencia. El atributo role es parte de 
-            la Iniciativa de Accesibilidad Web (WAI) y acepta valores preestablecidos.-->
             <section role="region" aria-labelledby="student-info">
-                <!--Cada función de región requiere una etiqueta, que ayuda a los usuarios de lectores de pantalla 
-                a comprender el propósito de la región. Un método para agregar una etiqueta es agregar un elemento 
-                de encabezado dentro de la región y luego hacer referencia a él con el atributo aria-labelledby.-->
                 <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label></label>
+                    <input />
+                </div>
+                <div class="info">
+                    <label></label>
+                    <input />
+                </div>
+                <div class="info">
+                    <label></label>
+                    <input />
+                </div>
             </section>
             <section role="region" aria-labelledby="html-questions">
-              <h2 id="html-questions">HTML</h2>
+                <h2 id="html-questions">HTML</h2>
             </section>
             <section role="region" aria-labelledby="css-questions">
-              <h2 id="css-questions">CSS</h2>
+                <h2 id="css-questions">CSS</h2>
             </section>
-        </main>
-    </body>
+        </form>
+    </main>
+</body>
 </html>
+
+
+
+<!--
+## Main + Header
+# The main element will contain the core content of your page.
+# The header element will be used to introduce the page, as well as provide a navigation menu.
+
+##TODO
+# Para aumentar la accesibilidad de la página, se puede utilizar el atributo role para indicar el 
+propósito de un elemento de la página a las tecnologías de asistencia. El atributo role es parte de 
+la Iniciativa de Accesibilidad Web (WAI) y acepta valores preestablecidos.
+
+# Cada función de región requiere una etiqueta, que ayuda a los usuarios de lectores de pantalla  
+a comprender el propósito de la región. Un método para agregar una etiqueta es agregar un elemento  de 
+encabezado dentro de la región y luego hacer referencia a él con el atributo aria-labelledby.
+
+##TODO
+# Es importante vincular cada enlace con el label element correspondiente. Esto proporciona a 
+  los usuarios de tecnología de asistencia una referencia visual de la entrada <input>.
+  Esto se hace asignando a la etiqueta un atributo for, que contiene el ID del input.
+
+##Etiquetas
+# Aunque no es necesario para elementos de etiqueta con una entrada anidada, sigue siendo una buena 
+  práctica vincular explícitamente una etiqueta con su elemento de entrada correspondiente.
+-->
