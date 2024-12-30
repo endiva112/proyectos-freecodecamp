@@ -24,28 +24,102 @@
             <section role="region" aria-labelledby="student-info">
                 <h2 id="student-info">Student Info</h2>
                 <div class="info">
-                    <label></label>
-                    <input />
+                    <label for="student-name">Name:</label>
+                    <input type="text" name="student-name" id="student-name" />
                 </div>
                 <div class="info">
-                    <label></label>
-                    <input />
+                    <label for="student-email">Email:</label>
+                    <input type="email" name="student-email" id="student-email" />
                 </div>
                 <div class="info">
-                    <label></label>
-                    <input />
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" name="birth-date" id="birth-date" />
                 </div>
             </section>
             <section role="region" aria-labelledby="html-questions">
                 <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>1</h3>
+                    <fieldset class="question" name="html-question-one">
+                        <legend>
+                            The legend element represents a caption for the content of its
+                            parent fieldset element
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                                    True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>2</h3>
+                    <fieldset class="question" name="html-question-two">
+                        <legend>
+                            A label element nesting an input element is required to have a
+                            for attribute with the same value as the input's id
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                                    True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="selector">Can the CSS margin property accept negative values?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="selector" id="selector" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css-textarea">Do you have any questions:</label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+                    </div>
+                </div>
             </section>
+            <button type="submit">Send</button>
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 </html>
+
 
 
 
@@ -65,10 +139,25 @@ encabezado dentro de la región y luego hacer referencia a él con el atributo a
 
 ##TODO
 # Es importante vincular cada enlace con el label element correspondiente. Esto proporciona a 
-  los usuarios de tecnología de asistencia una referencia visual de la entrada <input>.
-  Esto se hace asignando a la etiqueta un atributo for, que contiene el ID del input.
+los usuarios de tecnología de asistencia una referencia visual de la entrada <input>.
+Esto se hace asignando a la etiqueta un atributo for, que contiene el ID del input.
 
 ##Etiquetas
 # Aunque no es necesario para elementos de etiqueta con una entrada anidada, sigue siendo una buena 
-  práctica vincular explícitamente una etiqueta con su elemento de entrada correspondiente.
+práctica vincular explícitamente una etiqueta con su elemento de entrada correspondiente.
+
+# El footer es un contenedor para una colección de contenido relacionado con la página, 
+y el elemento address es un contenedor para la información de contacto del autor de la página.
+
+# La etiqueta <address> no tiene por qué contener una ubicación geográfica física. Puede utilizarse para proporcionar un enlace al asunto.
+    
+    ##Ratio
+    # En el tema de la accesibilidad visual, el contraste entre elementos es un factor clave. Por ejemplo, el contraste 
+    entre el texto y el fondo de un encabezado debe ser de al menos 4,5:1.
+    
+    ##Animación
+    # Ciertos tipos de animaciones basadas en movimiento pueden causar incomodidad a algunos usuarios. En particular, las personas con 
+    trastornos vestibulares tienen sensibilidad a ciertos desencadenantes de movimiento.
+    
+    La regla @media tiene una característica multimedia llamada prefers-reduced-motion para configurar CSS según las preferencias del usuario.
 -->
