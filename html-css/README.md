@@ -22,4 +22,4 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 
 - [Quiz](09.quizz): Proyecto enfocado a la accesibilidad de la página web. Se hacen uso de herramientas como atajos de teclado, atributos ARIA y mejores prácticas de diseño.
 
-- [Tribute Page](10.tribute-page): En este proyecto, he creado una página de homenaje de Alan Turing cumpliendo prerequisitos esenciales pero con diseño libre
+- [Tribute Page](10.tribute-page(certified_project)): En este proyecto, he creado una página de homenaje de Alan Turing cumpliendo prerequisitos esenciales pero con diseño libre
