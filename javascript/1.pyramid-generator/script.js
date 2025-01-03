@@ -6,9 +6,11 @@ pero no pueden contener espacios y no deben comenzar con un número.
 las palabras en mayúsculas. En JavaScript, la convención que se debe utilizar es camelcase "ejemploUno".
 
 */
-let character = 'Hello';
-let count = 8;
-let rows = ["Naomi", "Quincy", "CamperChan"];
-console.log(rows[0]);
-rows[rows.length - 1] = 10;
-console.log(rows);
+
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+
+}
