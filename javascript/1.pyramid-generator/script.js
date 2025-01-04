@@ -39,5 +39,24 @@ ex:
         //code goes here
     }
 
+# Por defecto, las funciones devuelven undefined como su valor. Para devolver algo más, debe utilizar la palabra clave return
+
+# Los parámetros son variables especiales a las que se les asigna un valor cuando se llama a la función y se pueden usar en la función para 
+cambiar dinámicamente el resultado del código de la función.
+# Para agregar un parámetro a la función, debe agregar un nombre de variable dentro de los paréntesis.
+
+# Las variables en JavaScript están disponibles en un ámbito específico. En otras palabras, el lugar donde se declara una variable determina 
+en qué parte del código se puede utilizar. El primer ámbito es el ámbito global. Las variables que se declaran fuera de cualquier "bloque", 
+como una función o un bucle for, están en el ámbito global.
+
+# Las variables también se pueden declarar dentro de una función. Se considera que estas variables están en el ámbito local o en el ámbito de bloque.
+Una variable declarada dentro de una función solo se puede utilizar dentro de esa función. Si intenta acceder a ella fuera de la función, obtendrá un 
+error de referencia.
+
+# Un aspecto importante que se debe saber sobre la palabra clave return es que no solo define un valor que se devolverá desde la función, sino que 
+también detiene la ejecución del código dentro de una función o una declaración de bloque. Esto significa que cualquier código posterior a una 
+declaración return no se ejecutará.
+
+
 
 */
