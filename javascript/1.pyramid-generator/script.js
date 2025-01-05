@@ -57,6 +57,6 @@ error de referencia.
 también detiene la ejecución del código dentro de una función o una declaración de bloque. Esto significa que cualquier código posterior a una 
 declaración return no se ejecutará.
 
-
+documentacion en progreso...
 
 */
