@@ -8,9 +8,19 @@ function padRow(rowNumber, rowCount) {
 }
 
 // TODO: use a different type of loop
-for (let i = 1; i <= count; i++) {
+/*for (let i = 1; i <= count; i++) {
   rows.push(padRow(i, count));
-}
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+
 
 let result = ""
 
@@ -66,6 +76,18 @@ error de referencia.
 # Un aspecto importante que se debe saber sobre la palabra clave return es que no solo define un valor que se devolverá desde la función, sino que 
 también detiene la ejecución del código dentro de una función o una declaración de bloque. Esto significa que cualquier código posterior a una 
 declaración return no se ejecutará.
+
+# Un valor verdadero es un valor que se considera verdadero cuando se evalúa como booleano. La mayoría de los valores que encontrará en JavaScript 
+serán verdaderos. 
+# Un valor falso es lo opuesto: un valor que se considera falso cuando se evalúa como booleano. JavaScript tiene una lista definida de valores falsos. 
+Algunos de ellos incluyen false, 0, "", null, undefined y NaN.
+
+
+##Operador de igualdad
+#El operador de igualdad puede provocar un comportamiento extraño en JavaScript. Por ejemplo, "0" == 0 es verdadero, aunque uno sea una cadena y el otro 
+un número. El operador de igualdad estricto === se utiliza para comprobar si dos valores son iguales y comparten el mismo tipo. Como regla general, este 
+es el operador de igualdad que siempre se debería utilizar. Con el operador de igualdad estricto, "0" === 0 se convierte en falso, porque si bien pueden 
+tener el mismo valor de cero, no son del mismo tipo.
 
 documentacion en progreso...
 
