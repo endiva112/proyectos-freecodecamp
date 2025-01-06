@@ -1,26 +1,19 @@
-
-const character = "#";
-const count = 8;
+const character = "!";
+const count = 10;
 const rows = [];
+let inverted = false;
 
 function padRow(rowNumber, rowCount) {
   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
-
-/*while (rows.length < count) {
-  rows.push(padRow(rows.length + 1, count));
-}*/
-
-/*for (let i = count; i > 0; i--) {
-  rows.push(padRow(i, count));
-}*/
-
-/*?*/
+for (let i = 1; i <= count; i++) {
+  if (inverted) {
+    rows.unshift(padRow(i, count));
+  } else {
+    rows.push(padRow(i, count));
+  }
+}
 
 let result = ""
 
@@ -29,18 +22,6 @@ for (const row of rows) {
 }
 
 console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Como declarar varaible:
@@ -89,6 +70,9 @@ un número. El operador de igualdad estricto === se utiliza para comprobar si do
 es el operador de igualdad que siempre se debería utilizar. Con el operador de igualdad estricto, "0" === 0 se convierte en falso, porque si bien pueden 
 tener el mismo valor de cero, no son del mismo tipo.
 
-documentacion en progreso...
+##Array sus métodos
+#El método .unshift() de un array le permite agregar un valor al comienzo del array, a diferencia de .push() que agrega el valor al final del array 
+.unshift() devuelve la nueva longitud del array en la que fue llamado.
 
+#Los arrays también tienen un método .shift(). Este método eliminará el primer elemento del array, a diferencia de .pop(), que elimina el último elemento.
 */
