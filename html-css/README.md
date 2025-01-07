@@ -4,12 +4,11 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 
 ## Proyectos
 
->-[Cat Photo App](01.cat-photo-app):
+>### [Cat Photo App](01.cat-photo-app):
+>- Ejercicio muy básico de HTML que hace uso de la mayoría de sus etiquetas usando buenas prácticas para la accesibilidad de la web.
 
->Ejercicio muy básico de HTML que hace uso de la mayoría de sus etiquetas usando buenas prácticas para la accesibilidad de la web.
-
->-[Cafe Menu](02.cafe-menu):
-> * Ejercicio básico de HTML y CSS para maquetar un menú sencillo.
+>- [Cafe Menu](02.cafe-menu):
+>* Ejercicio básico de HTML y CSS para maquetar un menú sencillo.
 
 >-[Colored Markers](03.colored-markers):
 >Aprendí a usar colores gradientes, opacidades y más en CSS.
