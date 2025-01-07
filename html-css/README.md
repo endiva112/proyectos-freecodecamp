@@ -8,13 +8,13 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
  * Ejercicio muy básico de HTML que hace uso de la mayoría de sus etiquetas usando buenas prácticas para la accesibilidad de la web.
 
 - [Cafe Menu](02.cafe-menu):
- - Ejercicio básico de HTML y CSS para maquetar un menú sencillo.
+    -- Ejercicio básico de HTML y CSS para maquetar un menú sencillo.
 
 - [Colored Markers](03.colored-markers):
-* Aprendí a usar colores gradientes, opacidades y más en CSS.
+ >> Aprendí a usar colores gradientes, opacidades y más en CSS. a
 
 - [Registration Form](04.registration-form):
-* Formulario html creado usando buenas prácticas de accesibilidad web, con un CSS vinculado añadiendo maquetación simple que hace uso de selectores.
+ > Formulario html creado usando buenas prácticas de accesibilidad web, con un CSS vinculado añadiendo maquetación simple que hace uso de selectores.
 
 - [Survey Form](05.survey-form(certified_project)):
 * Monté un formulario con los mínimos establecidos pero con temática y diseños libres.
