@@ -59,3 +59,25 @@
     </main>
   </body>
 </html>
+
+
+<!--
+##Para mejorar seo y accesibilidad es conveniente hacer el html y luego usar css si deseas que un elemento visualmente aparezca antes que otro
+#Los lectores de pantalla anuncian los elementos HTML en función del flujo del documento. Eventualmente, querremos que el balance general 
+tenga un encabezado de "Balance general" y un subtítulo de "AcmeWidgetCorp". Sin embargo, este orden no tiene sentido si lo anuncia un 
+lector de pantalla. 
+Es por ello que creo 2 span y asigno al primero el texto "AcmeWidgetCorp" y al segundo el texto "Balance general".
+Utilizaré CSS para invertir el orden del texto en la página, pero el orden HTML tendrá más sentido para un lector de pantalla.
+
+##Esconder elementos de los lectores de pantalla
+#Para ello, a la eriqueta, debemos asignarle un atributo "aria-hidden" establecido en true.
+
+##Tablas
+#Las tablas HTML utilizan el elemento caption para describir de qué se trata la tabla. El elemento caption siempre debe ser el primer elemento 
+hijo de una tabla, pero se puede posicionar con la propiedad CSS caption-side.
+
+##Tablas 2
+#Los elementos thead y tbody se utilizan para indicar qué parte de la tabla es el encabezado y qué parte contiene los datos o contenido principal.
+#El elemento tr se utiliza para indicar una fila de la tabla.
+#El elemento td indica una celda de datos, mientras que el elemento th indica una celda de encabezado.
+-->
