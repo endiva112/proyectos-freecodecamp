@@ -145,6 +145,18 @@ hijo de una tabla, pero se puede posicionar con la propiedad CSS caption-side.
 El selector: span[class~="sr-only"] seleccionará cualquier etiqueta span cuya clase incluya "sr-only" en este caso.
 
 ##calc()
-La función calc() es una función CSS que permite calcular un valor en función de otros valores. Por ejemplo, puede utilizarla para calcular el ancho 
-de la ventana gráfica menos el margen de un elemento: calc(100% - 20px);
+La función calc() es una función CSS que permite calcular un valor en función de otros valores. Por ejemplo, puede utilizarla para calcular 
+el ancho de la ventana gráfica menos el margen de un elemento: calc(100% - 20px);
+
+##:not()
+El pseudoselector :not() se utiliza para seleccionar todos los elementos que no coinciden con el selector (en este caso, cualquiera de los 
+elementos span que no tengan la clase sr-only). Esto garantiza que las reglas anteriores para el selector span[class~="sr-only"] no se 
+sobrescriban.
+
+#
+La diferencia clave entre tr[class="total"] y tr.total es que el primero seleccionará elementos tr donde la única clase sea total. El segundo 
+seleccionará elementos tr donde la clase incluya total.
+
+#pseudo selectores
+El pseudoselector :nth-of-type() se utiliza para seleccionar elementos específicos según su orden entre hermanos del mismo tipo.
 -->
