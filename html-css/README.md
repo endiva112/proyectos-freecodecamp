@@ -36,6 +36,6 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >+ Este proyecto es mi solución personal a la prueba **evaluatoria**
 >- En este proyecto, he creado una página de homenaje de Alan Turing cumpliendo prerequisitos esenciales pero con diseño libre.
 
->### [11. Balance Sheet](./):
+>### [11. Balance Sheet](11.balance-sheet):
 >+ **Proyecto en desarrollo**
 >- En este proyecto, se diseña una hoja de balances utilizando pseudoselectores CSS para cambiar elementos HTML específicos.
