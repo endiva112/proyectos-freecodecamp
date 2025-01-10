@@ -38,3 +38,7 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 
 >### [11. Balance Sheet](11.balance-sheet):
 >- En este proyecto, se diseña una hoja de balances utilizando pseudoselectores CSS para cambiar elementos HTML específicos.
+
+>### [12. Cat Painting](12.cat-painting):
+>+ **Proyectos en desarrollo**
+>- En este proyecto, se ha creado un dibujo de un gato usando el posicionamiento absoluto, la propiedad z-index y la propiedad transform.
