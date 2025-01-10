@@ -2,3 +2,25 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #c9d2fc;
+}
+
+.cat-head {
+    position: static;
+    top: 100px;
+    left: 100px;
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+    width: 205px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 46%;
+}
+
+/*
+El posicionamiento CSS te permite configurar cómo quieres que se posicione un elemento en el navegador. 
+Tiene una propiedad de posición que puedes configurar como static, absolute, relative, sticky or fixed.
+
+La posición static es la predeterminada para todos los elementos. Si la asignas a un elemento, no podrás 
+moverlo hacia los lados usando las propiedades top, right, left, o bottom.
+*/
