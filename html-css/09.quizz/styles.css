@@ -183,3 +183,10 @@ address {
     white-space: nowrap;
     border: 0;
 }
+
+/*
+# etiqueta > etiqueta
+El selector de combinación de elementos secundarios > se utiliza entre selectores para seleccionar únicamente elementos que coincidan con el segundo 
+selector y sean elementos secundarios directos del primer selector.
+Esto puede resultar útil cuando tienes elementos anidados profundamente y quieres controlar el alcance de tu estilo.
+*/

@@ -40,5 +40,12 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >- En este proyecto, se diseña una hoja de balances utilizando pseudoselectores CSS para cambiar elementos HTML específicos.
 
 >### [12. Cat Painting](12.cat-painting):
->+ **Proyectos en desarrollo**
 >- En este proyecto, se ha creado un dibujo de un gato usando el posicionamiento absoluto, la propiedad z-index y la propiedad transform.
+
+>### [13. Piano](13.piano):
+>- En este proyecto, utilizo CSS y diseño responsivo para codificar un piano. También he aprendido más a cerca de "media queries" y pseudoselectores.
+
+>### [14. Technical Documentation Page( Proyecto personal )](14.technical-documentation-page(certified_project)):
+>+ **Proyectos en desarrollo**
+>+ Este proyecto es mi solución personal a la prueba **evaluatoria**
+>- Se ha creado una página de documentación técnica que sirva como instrucción o referencia para un tema con los mínimos establecidos pero con temática y diseños libres.
