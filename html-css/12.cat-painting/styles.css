@@ -23,4 +23,7 @@ Tiene una propiedad de posición que puedes configurar como static, absolute, re
 
 La posición static es la predeterminada para todos los elementos. Si la asignas a un elemento, no podrás 
 moverlo hacia los lados usando las propiedades top, right, left, o bottom.
+
+Cuando utiliza el valor absoluto para su propiedad de position, el elemento se saca del flujo normal del 
+documento y luego su posición se determina mediante las propiedades top, right, bottom, and left.
 */
