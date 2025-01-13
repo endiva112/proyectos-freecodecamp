@@ -4,12 +4,27 @@
     border: 0;
 }
 
-html {
-    background-color: wheat;
+body {
+    background-color: #f8f9fa;
 }
 
 @media (max-width: 400px) {
-    html {
+    body {
         background-color: red;
     }
 }
+
+
+
+/*
+Paleta de color:
+    f8f9fa
+    e9ecef
+    dee2e6
+    ced4da
+    adb5bd
+    6c757d
+    495057
+    343a40
+    212529
+*/
