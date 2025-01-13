@@ -3,3 +3,13 @@
     padding: 0;
     border: 0;
 }
+
+html {
+    background-color: wheat;
+}
+
+@media (max-width: 400px) {
+    html {
+        background-color: red;
+    }
+}
