@@ -49,3 +49,7 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >+ **Proyectos en desarrollo**
 >+ Este proyecto es mi solución personal a la prueba **evaluatoria**
 >- Se ha creado una página de documentación técnica que sirva como instrucción o referencia para un tema con los mínimos establecidos pero con temática y diseños libres.
+
+>### [15. WORK IN PROGRESS](./):
+>+ **Proyectos en desarrollo**
+
