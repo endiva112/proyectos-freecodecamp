@@ -173,20 +173,14 @@ adb5bd
 */
 
 
-.contaienr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .switch input {
     display: none;
 }
 
 .switch label {
     display: block;
-    width: 120px;
-    height: 50px;
+    width: 100px;
+    height: 100%;
     background: radial-gradient(#bbc0cc, #787c84);
     border: 1px solid #5555;
     border-radius: 40px;
@@ -218,6 +212,7 @@ adb5bd
 
 .switch label button::after {
     content: '-';
+    margin: 0 2px 5px 0;
     color: #787b84;
 }
 
@@ -226,19 +221,20 @@ adb5bd
 }
 
 
-
+/**/
 
 footer {
     background-color: #0a0a23;
     color: #fff;
     border-top: 4px solid #fdb347;
     height: 100px;
-
+    text-align: center;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    font-size: 0.8em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     padding: 0 30px;
 }
 
