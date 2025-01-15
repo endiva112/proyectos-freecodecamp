@@ -108,71 +108,6 @@ body {
     padding: 6px; 
 }
 
-
-
-
-
-/*
-f8f9fa
-e9ecef
-dee2e6
-ced4da
-adb5bd
-6c757d
-495057
-343a40
-212529
-*/
-
-/**/
-
-#main-doc {
-    /*Posicionar contenedor*/
-    margin-left: 15%;
-    width: 85%;
-
-    /*Posicionar contenido contenedor*/
-    display: flex;
-    flex-direction: column;
-}
-
-.main-section {
-    background-color: cadetblue;
-
-    /*Posicionar contenido contenedor*/
-    margin: 20px;
-    padding: 20px;
-}
-
-
-
-
-
-
-
-@media (max-width: 400px) {
-    body {
-        background-color: red;
-    }
-}
-
-/*MIERDAS POR REVISAR*//*
-
-
-/*
-Paleta de color:
-f8f9fa
-e9ecef
-dee2e6
-ced4da
-adb5bd
-6c757d
-495057
-343a40
-212529
-*/
-
-
 .switch input {
     display: none;
 }
@@ -221,6 +156,46 @@ adb5bd
 }
 
 
+
+
+
+/*
+f8f9fa
+e9ecef
+dee2e6
+ced4da
+adb5bd
+6c757d
+495057
+343a40
+212529
+*/
+
+/**/
+
+#main-doc {
+    /*Posicionar contenedor*/
+    margin-left: 15%;
+    width: 85%;
+
+    /*Posicionar contenido contenedor*/
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    background-color: cadetblue;
+
+    /*Posicionar contenido contenedor*/
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
 /**/
 
 footer {
@@ -253,4 +228,10 @@ footer a:hover {
   
 footer a:active {
     color: #a8dadc;
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: red;
+    }
 }
