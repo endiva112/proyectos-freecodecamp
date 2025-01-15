@@ -2,6 +2,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,40 +20,62 @@ body {
 #navbar {
     /*Posicionar contenedor*/
     position: fixed;
-    width: 20%;
+    width: 15%;
     height: 1000px;
-    background-color: red;
-    
+    border-right: 3px solid #6c757d;
+
     /*Posicionar contenido contenedor*/
+    box-sizing: border-box; 
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
 }
 
-#main-doc {
-    /*Posicionar contenedor*/
-    margin-left: 20%;
-    width: 80%;
-    height: 2000px;
-    background-color: greenyellow;
-    
-    /*Posicionar contenido contenedor*/
-    display: flex;
-    flex-direction: column;
+#navbar header {
+    border-bottom: 2px solid #343a40;
+    padding: 10px 20px 0 0;
+    box-sizing: border-box;
+    height: 60px;
+
+    text-align: right;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.nav-link {
+    padding: 0 0 14px 14px;
+    border-bottom: 1px solid #343a40;
+
+    font-size: 0.85em;
+    font-weight: 500;
+    font-family: Helvetica;
+    text-decoration: none;
+    color: #212529;
+/*
+f8f9fa
+e9ecef
+dee2e6
+ced4da
+adb5bd
+6c757d
+495057
+343a40
+212529
+*/
 }
 
 #header-navbar {
-    background-color: beige;
-    display: flex; /* Cambiar a flex para manejar la distribución */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: space-between; /* Espacio entre elementos */
-    padding: 0 20px; /* Espaciado interno para los bordes */
-    height: 60px; /* Ajustar altura si es necesario */
-}
+    background-color: #dee2e6;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0 30px;
 
-#header-navbar header {
-    font-size: 1.5em;
-    flex: 1; /* Tomar espacio disponible al inicio */
-    text-align: left; /* Alinear texto a la izquierda */
+    /*Posicionar contenido contenedor*/
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
 }
 
 #header-navbar img {
@@ -62,19 +85,23 @@ body {
     display: block;
 }
 
-#header-navbar button {
-    flex: 1; /* Asignar espacio proporcional */
-    text-align: right; /* Alinear el botón a la derecha */
-    padding: 10px;
-    margin-left: auto; /* Empujar el botón hacia la derecha */
-    cursor: pointer;
+#main-doc {
+    /*Posicionar contenedor*/
+    margin-left: 15%;
+    width: 85%;
+    height: 2000px;
+    /*background-color: greenyellow;
+    
+    /*Posicionar contenido contenedor*/
+    display: flex;
+    flex-direction: column;
 }
-
 
 .main-section {
     background-color: cadetblue;
 
     /*Posicionar contenido contenedor*/
+    margin: 20px;
     padding: 20px;
 }
 
@@ -86,31 +113,69 @@ body {
     list-style: none;
 }
 
+
+
+
+
+
+
+
+/*MIERDAS POR REVISAR*//*
+#header-navbar {
+    background-color: #e9ecef;
+    display: flex; /* Cambiar a flex para manejar la distribución 
+    align-items: center; /* Centrar verticalmente 
+    justify-content: space-between; /* Espacio entre elementos 
+    padding: 0 20px; /* Espaciado interno para los bordes 
+    height: 60px; /* Ajustar altura si es necesario 
+}
+
+#header-navbar header {
+    font-size: 1.5em;
+    flex: 1; /* Tomar espacio disponible al inicio 
+    text-align: left; /* Alinear texto a la izquierda 
+}
+
+#header-navbar img {
+    flex: 1; /* Asegurarse de que ocupe su lugar proporcional 
+    height: 30px; /* Tamaño de la imagen 
+    margin: 0 auto; /* Centrar la imagen 
+    display: block;
+}
+
+#header-navbar button {
+    flex: 1; /* Asignar espacio proporcional 
+    text-align: right; /* Alinear el botón a la derecha 
+    padding: 10px;
+    margin-left: auto; /* Empujar el botón hacia la derecha 
+    cursor: pointer;
+}
+
 #language-selector ul {
     margin: 0;
     padding: 0;
-    list-style: none; /* Elimina los estilos de lista */
-    position: absolute; /* Posición para desplegar */
-    display: none; /* Ocultar por defecto */
-    background-color: white; /* Fondo para las banderas desplegadas */
-    border: 1px solid #ccc; /* Borde opcional para mejor visibilidad */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    list-style: none; /* Elimina los estilos de lista 
+    position: absolute; /* Posición para desplegar 
+    display: none; /* Ocultar por defecto 
+    background-color: white; /* Fondo para las banderas desplegadas 
+    border: 1px solid #ccc; /* Borde opcional para mejor visibilidad 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional 
     z-index: 10;
 }
 
 #language-selector[open] ul {
-    display: block; /* Mostrar al abrir el desplegable */
+    display: block; /* Mostrar al abrir el desplegable 
 }
 
 #language-selector ul img {
-    width: 24px; /* Tamaño de las banderas */
+    width: 24px; /* Tamaño de las banderas 
     height: auto;
-    cursor: pointer; /* Indica que son clicables */
+    cursor: pointer; /* Indica que son clicables 
     padding: 5px;
 }
 
 #language-selector ul img:hover {
-    background-color: #f0f0f0; /* Resaltar la bandera al pasar el ratón */
+    background-color: #f0f0f0; /* Resaltar la bandera al pasar el ratón 
     border-radius: 4px;
 }
 
@@ -135,6 +200,54 @@ adb5bd
         background-color: red;
     }
 }
+.contaienr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.switch input {
+    display: none;
+}
 
+.switch label {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: radial-gradient(#bbc0cc, #787c84);
+    border: 1px solid #5555;
+    border-radius: 40px;
+    box-shadow: 0 3px 15px #0005;
+    cursor: pointer;
+}
 
+.switch label button {
+    pointer-events: none;
+    width: 80%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    background: linear-gradient(to right, #c1c4cc 47%, #dddfe5 53%);
+    box-shadow: inset -2px 0 2px -1px #fff5, inset 2px 0 2px -1px #fff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.switch label button::before, .switch label button::after {
+    font-size: bolder;
+    width: 50%;
+    content: 'O';
+    font-size: xx-large;
+    color: #eee;
+}
+
+.switch label button::after {
+    content: '-';
+    color: #787b84;
+}
+
+.switch input:checked ~ label > button {
+    margin-left: 20%;
+}

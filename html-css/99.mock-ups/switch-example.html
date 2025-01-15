@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<body>
+    <div class="container">
+        <div class="switch">
+            <input type="checkbox" name="" id="switch">
+            <label for="switch">
+                <button></button>
+            </label>
+        </div>
+    </div>
+</body>
+
+
+
+
+<style>
+.contaienr {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch label {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: radial-gradient(#bbc0cc, #787c84);
+    border: 1px solid #5555;
+    border-radius: 40px;
+    box-shadow: 0 3px 15px #0005;
+    cursor: pointer;
+}
+
+.switch label button {
+    pointer-events: none;
+    width: 80%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    background: linear-gradient(to right, #c1c4cc 47%, #dddfe5 53%);
+    box-shadow: inset -2px 0 2px -1px #fff5, inset 2px 0 2px -1px #fff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.switch label button::before, .switch label button::after {
+    font-size: bolder;
+    width: 50%;
+    content: 'O';
+    font-size: xx-large;
+    color: #eee;
+}
+
+.switch label button::after {
+    content: '-';
+    color: #787b84;
+}
+
+.switch input:checked ~ label > button {
+    margin-left: 20%;
+}
+
+</style>
+</html>
