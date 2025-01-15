@@ -21,7 +21,7 @@ body {
     /*Posicionar contenedor*/
     position: fixed;
     width: 15%;
-    height: 1000px;
+    height: 100vh;
     border-right: 3px solid #6c757d;
 
     /*Posicionar contenido contenedor*/
@@ -52,6 +52,66 @@ body {
     font-family: Helvetica;
     text-decoration: none;
     color: #212529;
+}
+
+#header-navbar {
+    background-color: #dee2e6;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    /*Evitar poder seleccionar componentes*/
+    user-select: none;
+
+    /*Posicionar contenido contenedor*/
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#header-navbar header{
+    font-size: 1.25em;
+    flex: 0.9;  /*TODO -> Realizar más proyectos usando esta propiedad para masterizarla*/
+}
+
+#header-navbar img {
+    height: 30px;
+    display: block;
+}
+
+#language-selector {
+    z-index: 1;
+    position: relative;
+}
+
+#language-selector summary{
+    list-style: none;
+    cursor: pointer;
+}
+
+#language-selector[open] ul {
+    /*Posicionamiento*/
+    position: absolute;
+    display: block;
+    left: -6px;
+    top: 100%;
+
+    /*Diseño*/
+    box-shadow: inset -20px 0 20px -1px #ced4da, inset 2px 0 2px -1px #e9ecef;
+    border-radius: 50% 50% 10px 10px;
+    background-color: #f8f9fa;
+    padding: 10px 0 2px 0; 
+    list-style: none;
+}
+
+#language-selector li {
+    padding: 6px; 
+}
+
+
+
+
+
 /*
 f8f9fa
 e9ecef
@@ -63,35 +123,14 @@ adb5bd
 343a40
 212529
 */
-}
 
-#header-navbar {
-    background-color: #dee2e6;
-    height: 60px;
-    box-sizing: border-box;
-    padding: 0 30px;
-
-    /*Posicionar contenido contenedor*/
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    
-}
-
-#header-navbar img {
-    flex: 1; /* Asegurarse de que ocupe su lugar proporcional */
-    height: 30px; /* Tamaño de la imagen */
-    margin: 0 auto; /* Centrar la imagen */
-    display: block;
-}
+/**/
 
 #main-doc {
     /*Posicionar contenedor*/
     margin-left: 15%;
     width: 85%;
-    height: 2000px;
-    /*background-color: greenyellow;
-    
+
     /*Posicionar contenido contenedor*/
     display: flex;
     flex-direction: column;
@@ -105,79 +144,20 @@ adb5bd
     padding: 20px;
 }
 
-#language-selector {
-    z-index: 1;
+
+
+
+
+
+
+@media (max-width: 400px) {
+    body {
+        background-color: red;
+    }
 }
-
-#language-selector summary{
-    list-style: none;
-}
-
-
-
-
-
-
-
 
 /*MIERDAS POR REVISAR*//*
-#header-navbar {
-    background-color: #e9ecef;
-    display: flex; /* Cambiar a flex para manejar la distribución 
-    align-items: center; /* Centrar verticalmente 
-    justify-content: space-between; /* Espacio entre elementos 
-    padding: 0 20px; /* Espaciado interno para los bordes 
-    height: 60px; /* Ajustar altura si es necesario 
-}
 
-#header-navbar header {
-    font-size: 1.5em;
-    flex: 1; /* Tomar espacio disponible al inicio 
-    text-align: left; /* Alinear texto a la izquierda 
-}
-
-#header-navbar img {
-    flex: 1; /* Asegurarse de que ocupe su lugar proporcional 
-    height: 30px; /* Tamaño de la imagen 
-    margin: 0 auto; /* Centrar la imagen 
-    display: block;
-}
-
-#header-navbar button {
-    flex: 1; /* Asignar espacio proporcional 
-    text-align: right; /* Alinear el botón a la derecha 
-    padding: 10px;
-    margin-left: auto; /* Empujar el botón hacia la derecha 
-    cursor: pointer;
-}
-
-#language-selector ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; /* Elimina los estilos de lista 
-    position: absolute; /* Posición para desplegar 
-    display: none; /* Ocultar por defecto 
-    background-color: white; /* Fondo para las banderas desplegadas 
-    border: 1px solid #ccc; /* Borde opcional para mejor visibilidad 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional 
-    z-index: 10;
-}
-
-#language-selector[open] ul {
-    display: block; /* Mostrar al abrir el desplegable 
-}
-
-#language-selector ul img {
-    width: 24px; /* Tamaño de las banderas 
-    height: auto;
-    cursor: pointer; /* Indica que son clicables 
-    padding: 5px;
-}
-
-#language-selector ul img:hover {
-    background-color: #f0f0f0; /* Resaltar la bandera al pasar el ratón 
-    border-radius: 4px;
-}
 
 /*
 Paleta de color:
@@ -193,13 +173,6 @@ adb5bd
 */
 
 
-
-
-@media (max-width: 400px) {
-    body {
-        background-color: red;
-    }
-}
 .contaienr {
     display: flex;
     justify-content: center;
@@ -250,4 +223,38 @@ adb5bd
 
 .switch input:checked ~ label > button {
     margin-left: 20%;
+}
+
+
+
+
+footer {
+    background-color: #0a0a23;
+    color: #fff;
+    border-top: 4px solid #fdb347;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+footer a {
+    color: #fdb347;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #1a535c;
+}
+  
+footer a:hover {
+    color: #4ecdc4;
+}
+  
+footer a:active {
+    color: #a8dadc;
 }
