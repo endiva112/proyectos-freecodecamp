@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de documentación técnica</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>Documentación de Java</header>
+    <nav id="navbar">
+        <header>Documentación de Git</header>
+        <a class="nav-link" href="#topic_1">Configuración Inicial</a>
+        <a class="nav-link" href="#topic_2">Inicializar un Repositorio</a>
+        <a class="nav-link" href="#topic_3">Seguimiento de Archivos</a>
+        <a class="nav-link" href="#topic_4">Guardar Cambios</a>
+        <a class="nav-link" href="#topic_5">Ramas en Git</a>
+        <a class="nav-link" href="#topic_6">Fusión de Ramas</a>
+    </nav>
     <main id="main-doc">
-        <nav id="navbar">
-            <header>navbarheader</header>
-            <a class="nav-link" href="#topic_1">topic 1</a>
-            <a class="nav-link" href="#topic_2">topic 2</a>
-            <a class="nav-link" href="#topic_3">topic 3</a>
-            <a class="nav-link" href="#topic_4">topic 4</a>
-            <a class="nav-link" href="#topic_5">topic 5</a>
-            <a class="nav-link" href="#topic_6">topic 6</a>
+        <nav id="header-navbar">
+            <header>Documentación de Git</header>
+            <details id="language-selector">
+                <summary>
+                    <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="">
+                </summary>
+                <ul>
+                    <a href="index-en.html">
+                        <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="">
+                    </a>
+                </ul>
+            </details>
+            <button>a</button>
         </nav>
+        
         <section class="main-section" id="topic_1">
             <header id="topic_1">topic 1</header>
             <article>
@@ -27,7 +42,7 @@
                 <p>10</p>
                 <code>console.log("hello world")</code>
                 <ul>
-                    <li></li>
+                    <li>a</li>
                 </ul>
             </article>
         </section>

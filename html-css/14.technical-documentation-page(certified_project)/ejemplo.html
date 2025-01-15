@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas de Colores</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .box-red {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            background-color: red;
+            z-index: 1;
+        }
+
+        .box-green, .box-blue {
+            margin-left: 30%; /* Leaves space for the red box */
+            width: 70%;
+            background-color: green;
+            height: 2000px;
+        }
+
+        .box-blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box-red"></div>
+        <div class="box-green"></div>
+        <div class="box-blue"></div>
+    </div>
+</body>
+
+</html>
