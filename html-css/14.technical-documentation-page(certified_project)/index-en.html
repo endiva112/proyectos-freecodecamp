@@ -47,103 +47,578 @@
         </nav>
 
         <section class="main-section" id="Introduction_to_Git">
-            <header id="Introduction_to_Git">Introduction to Git</header>
+            <header id="Introduction_to_Git"><h2>Introduction to Git</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>What is Git?</h3>
+                <p>Git is a distributed version control system designed to track changes made to files in a project. It was created by Linus Torvalds in 2005 to manage the development of the Linux kernel.</p>
+                <p>With Git, developers can:</p>
                 <ul>
-                    <li>a</li>
+                    <li>Collaborate in teams without overwriting others' work.</li>
+                    <li>Maintain a complete history of changes in the project.</li>
+                    <li>Restore previous versions in case of errors.</li>
                 </ul>
+                <h3>Why use Git?</h3>
+                <p>Git has become the de facto standard in software development for the following reasons:</p>
+                <ol>
+                    <li>Efficient collaboration: Allows multiple developers to work simultaneously on different parts of a project.</li>
+                    <li>Complete history: Keeps all changes made, along with who made them and why.</li>
+                    <li>Security: Git data is hard to corrupt due to its design.</li>
+                    <li>Distribution: Each copy of the repository contains the full project history, so it doesn't rely on a central server.</li>
+                    <li>Flexibility: Works for projects of any size and complexity.</li>
+                </ol>
+                <h3>Installing Git</h3>
+                <p>To start using Git, you first need to install it on your computer. Let's see how to do it depending on your operating system.</p>
+                <ol>
+                    <li>
+                        <h4>Windows</h4>
+                        <ul>
+                            <li>Download the installer from <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>.</li>
+                            <li>Run the downloaded file and follow the instructions in the setup wizard.</li>
+                            <li>During installation, you'll be prompted to choose settings like the default editor. You can keep the recommended options.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>MacOS</h4>
+                        <ul>
+                            <li>If you have Homebrew installed, you can install Git with:</li>
+                            <pre><code>brew install git</code></pre>
+                            <li>You can also download it directly from <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Linux</h4>
+                        <p>Use your distribution's package manager to install Git. Some examples:</p>
+                        <ul>
+                            <li>Ubuntu/Debian:</li>
+                            <pre><code>sudo apt-get install git</code></pre>
+                            <li>CentOS/Fedora:</li>
+                            <pre><code>sudo yum install git</code></pre>
+                        </ul>
+                        <p>To verify that Git is installed correctly, run:</p>
+                        <pre><code>git --version</code></pre>
+                    </li>
+                </ol>
+                <h3>Initial Git Setup</h3>
+                <p>Once installed, it's important to perform an initial setup to personalize Git according to your identity and preferences.</p>
+                <ol>
+                    <li>
+                        <h4>Set up username and email</h4>
+                        <p>These values will be used to identify you in the commits you make.</p>
+                        <ul>
+                            <li>
+                                <p>Set your name:</p>
+                                <pre><code>git config --global user.name "YourName"</code></pre>
+                            </li>
+                            <li>
+                                <p>Set your email:</p>
+                                <pre><code>git config --global user.email "YourEmail@example.com"</code></pre>
+                            </li>
+                            <li>
+                                <p>To verify your configuration, use:</p>
+                                <pre><code>git config --global --list</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Set up default editor</h4>
+                        <p>Git uses a text editor for tasks such as writing long commit messages. By default, it uses <code>vim</code>, but you can change it to any editor you prefer. For example:</p>
+                        <ul>
+                            <li>To set Visual Studio Code as the default editor:</li>
+                            <pre><code>git config --global core.editor "code --wait"</code></pre>
+                            <li>To set Nano as the default editor:</li>
+                            <pre><code>git config --global core.editor "nano"</code></pre>
+                        </ul>
+                    </li>
+                </ol>
             </article>
         </section>
         <section class="main-section" id="Basic_Concepts_of_Git">
-            <header id="Basic_Concepts_of_Git">Basic Concepts of Git</header>
+            <header id="Basic_Concepts_of_Git"><h2>Basic Git Concepts</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Repositories</h3>
+                <p>A repository in Git is the space where the files of a project are stored along with its change history. It can be local (on your machine) or remote (on a platform like GitHub or GitLab).</p>
+                
+                <h4>Create a repository</h4>
+                <p>To create a local repository, use the command:</p>
+                <pre><code>git init</code></pre>
+                <p>This command initializes a new empty repository in the current directory.</p>
+                
+                <h4>Clone a repository</h4>
+                <p>To get a copy of a remote repository on your local machine, use:</p>
+                <pre><code>git clone REPOSITORY_URL</code></pre>
+                <p>For example:</p>
+                <pre><code>git clone https://github.com/user/repository.git</code></pre>
+                <p>This will download all the files and history from the remote repository.</p>
+                
+                <h3>Branches</h3>
+                <p>Branches are independent versions of your project that you can develop in parallel. Using branches makes it easier to work on new features without affecting the main branch.</p>
+                
+                <h4>Create a branch</h4>
+                <p>To create a new branch, use:</p>
+                <pre><code>git branch branch_name</code></pre>
+                <p>For example, to create a branch named <code>new-feature</code>:</p>
+                <pre><code>git branch new-feature</code></pre>
+                
+                <h4>Switch branches</h4>
+                <p>To switch to an existing branch, use:</p>
+                <pre><code>git checkout branch_name</code></pre>
+                <p>For example:</p>
+                <pre><code>git checkout new-feature</code></pre>
+                <p>You can also create a new branch and switch to it immediately with:</p>
+                <pre><code>git checkout -b branch_name</code></pre>
+                
+                <h4>Basic branch workflow</h4>
+                <p>A typical workflow with branches is:</p>
+                <ol>
+                    <li>Create a new branch for the feature you want to work on.</li>
+                    <li>Make changes and commits in that branch.</li>
+                    <li>Merge the feature branch into the main branch once the work is complete.</li>
+                </ol>
+                
+                <h3>Commits</h3>
+                <p>Commits are "snapshots" of the state of the files at a given point in time. Each commit includes a message describing the changes made.</p>
+                
+                <h4>Create a commit</h4>
+                <p>After making changes to the files, use the following commands:</p>
+                <ol>
+                    <li>Stage the files for commit:</li>
+                    <pre><code>git add file_or_folder</code></pre>
+                    <p>To stage all files, use:</p>
+                    <pre><code>git add .</code></pre>
+                    <li>Create the commit with a descriptive message:</li>
+                    <pre><code>git commit -m "Message describing the changes"</code></pre>
+                </ol>
+                
+                <h4>Effective commit messages</h4>
+                <p>A good commit message should be clear and descriptive. Follow these guidelines:</p>
                 <ul>
-                    <li></li>
+                    <li>Use the imperative mood (e.g., "Add search function").</li>
+                    <li>Keep the messages short and to the point.</li>
+                    <li>Explain the reasoning behind the change if necessary.</li>
                 </ul>
+                
+                <h4>View commit history</h4>
+                <p>To view the commit history of a repository, use:</p>
+                <pre><code>git log</code></pre>
+                <p>This will show detailed information about each commit, such as its author, date, and message.</p>
+                <p>For a more compact history, use:</p>
+                <pre><code>git log --oneline</code></pre>
             </article>
         </section>
         <section class="main-section" id="Teamwork_with_Git">
-            <header id="Teamwork_with_Git">Teamwork with Git</header>
+            <header id="Teamwork_with_Git"><h2>Teamwork with Git</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Remotes</h3>
+                <p>Remotes are repositories hosted on platforms like GitHub, GitLab, or Bitbucket. They allow collaboration with other developers by synchronizing changes between the local and remote repositories.</p>
+                
+                <h4>Add a remote</h4>
+                <p>To link your local repository with a remote repository, use:</p>
+                <pre><code>git remote add origin REPOSITORY_URL</code></pre>
+                <p>For example:</p>
+                <pre><code>git remote add origin https://github.com/user/repository.git</code></pre>
+                <p>To check the configured remotes, use:</p>
+                <pre><code>git remote -v</code></pre>
+                
+                <h4>Fetch changes from remote (pull and fetch)</h4>
+                <p>To get the latest changes from the remote to your local repository, you can use:</p>
                 <ul>
-                    <li></li>
+                    <li><strong>git fetch:</strong> Gets the remote changes but doesn't merge them with your local branch.</li>
+                    <li><strong>git pull:</strong> Gets the remote changes and automatically merges them with your current branch.</li>
+                </ul>
+                <p>Command to make a pull:</p>
+                <pre><code>git pull origin branch</code></pre>
+                <p>For example:</p>
+                <pre><code>git pull origin main</code></pre>
+                
+                <h4>Push changes to remote</h4>
+                <p>To send changes from your local repository to the remote, use:</p>
+                <pre><code>git push origin branch</code></pre>
+                <p>For example, to push changes to the <code>main</code> branch:</p>
+                <pre><code>git push origin main</code></pre>
+                
+                <h3>Conflict resolution</h3>
+                <h4>What are conflicts?</h4>
+                <p>A conflict occurs when Git cannot automatically merge changes made to the same lines of a file by different collaborators. This usually happens when performing a merge or pull.</p>
+                
+                <h4>Strategies for resolving conflicts</h4>
+                <ol>
+                    <li>When a conflict occurs, Git will mark the conflicting areas in the affected files.</li>
+                    <li>Edit the file to choose which changes to keep.</li>
+                    <li>Save the file and mark the conflict as resolved with:</li>
+                    <pre><code>git add affected_file</code></pre>
+                    <li>Complete the merge with:</li>
+                    <pre><code>git commit</code></pre>
+                </ol>
+                <p>To avoid conflicts:</p>
+                <ul>
+                    <li>Pull frequently to keep your branch up to date.</li>
+                    <li>Communicate important changes with your team.</li>
+                </ul>
+                
+                <h3>Pull requests and merge requests</h3>
+                <h4>What are they and when to use them?</h4>
+                <p>A <strong>pull request</strong> (on GitHub) or <strong>merge request</strong> (on GitLab) is a request to merge changes from one branch to another. These tools make code review easier before merging the changes.</p>
+                <p>Typical process:</p>
+                <ol>
+                    <li>Push your changes to a branch in the remote repository.</li>
+                    <li>Create a pull request from the platform interface.</li>
+                    <li>Wait for review and approval from other team members.</li>
+                    <li>Once approved, perform the merge.</li>
+                </ol>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Allows collaborative code review.</li>
+                    <li>Facilitates discussion about specific changes.</li>
+                    <li>Helps maintain a clear and organized project history.</li>
                 </ul>
             </article>
         </section>
         <section class="main-section" id="Advanced_Workflow">
-            <header id="Advanced_Workflow">Advanced Workflow</header>
+            <header id="Advanced_Workflow"><h2>Advanced Workflow</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Rebases</h3>
+                <h4>What is a rebase?</h4>
+                <p>Rebase is an alternative to <code>merge</code> that rewrites the commit history to apply changes from one branch onto another as if they had been made sequentially. This results in a more linear and readable history.</p>
+                <p>Basic command:</p>
+                <pre><code>git rebase base_branch</code></pre>
+                <p>For example, to apply the changes from your current branch onto the <code>main</code> branch:</p>
+                <pre><code>git rebase main</code></pre>
+            
+                <h4>Interactive rebase</h4>
+                <p>Interactive rebase allows you to modify, combine, or delete commits during the rebase process. It's useful for cleaning up history before pushing changes.</p>
+                <p>Command to start an interactive rebase:</p>
+                <pre><code>git rebase -i HEAD~n</code></pre>
+                <p>Where <code>n</code> is the number of recent commits you want to modify.</p>
+                <p>During the process, you can perform actions like:</p>
                 <ul>
-                    <li></li>
+                    <li><strong>pick:</strong> Keep the commit as is.</li>
+                    <li><strong>reword:</strong> Change the commit message.</li>
+                    <li><strong>edit:</strong> Pause to modify the commit content.</li>
+                    <li><strong>squash:</strong> Combine multiple commits into one.</li>
+                    <li><strong>drop:</strong> Remove a commit.</li>
                 </ul>
+            
+                <h3>Stashing</h3>
+                <h4>Temporarily save changes</h4>
+                <p>The <code>git stash</code> command temporarily saves your current changes so that you can switch branches or perform other actions without losing your uncommitted work.</p>
+                <p>Command to save changes:</p>
+                <pre><code>git stash</code></pre>
+                <p>To add a description to the stash:</p>
+                <pre><code>git stash save "Description"</code></pre>
+            
+                <h4>Retrieve saved changes</h4>
+                <p>To retrieve the most recently saved changes:</p>
+                <pre><code>git stash apply</code></pre>
+                <p>To retrieve and remove the stash from the list:</p>
+                <pre><code>git stash pop</code></pre>
+                <p>To list all saved stashes:</p>
+                <pre><code>git stash list</code></pre>
+            
+                <h3>Cherry-picking</h3>
+                <h4>Apply specific commits to another branch</h4>
+                <p>Cherry-picking allows you to apply a specific commit from one branch to another without performing a full merge.</p>
+                <p>Basic command:</p>
+                <pre><code>git cherry-pick COMMIT_ID</code></pre>
+                <p>To get the commit ID, you can use:</p>
+                <pre><code>git log</code></pre>
+                <p>Example:</p>
+                <pre><code>git cherry-pick a1b2c3d4</code></pre>
+            
+                <h3>Git hooks</h3>
+                <p><strong>Git hooks</strong> are scripts that run automatically before or after key events such as commits, merges, or pushes. They are useful for automating tasks like checking code or deploying applications.</p>
+            
+                <h4>Customization and automation with hooks</h4>
+                <p>Hooks are located in the <code>.git/hooks</code> directory of your repository. Some common hooks are:</p>
+                <ul>
+                    <li><code>pre-commit:</code> Runs before a commit is made. Useful for checking code formatting.</li>
+                    <li><code>pre-push:</code> Runs before pushing changes to the remote. You can use it to run automated tests.</li>
+                    <li><code>post-merge:</code> Runs after a merge. It can be useful for updating dependencies.</li>
+                </ul>
+                <p>To enable a hook, create or edit the corresponding file, for example:</p>
+                <pre><code>nano .git/hooks/pre-commit</code></pre>
+                <p>Make sure the file is executable:</p>
+                <pre><code>chmod +x .git/hooks/pre-commit</code></pre>
             </article>
         </section>
         <section class="main-section" id="Error_Management">
-            <header id="Error_Management">Error Management</header>
+            <header id="Error_Management"><h2>Error Management</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
-                <ul>
-                    <li></li>
-                </ul>
+                <h3>Undo Changes</h3>
+                <p>In Git, it's common to make mistakes or need to undo certain changes. Depending on the situation, you can use different commands:</p>
+                
+                <h4>Undo changes in files not added to the staging area</h4>
+                <p>If you modified a file but haven't used <code>git add</code> yet, you can revert it to its last committed version with:</p>
+                <pre><code>git checkout -- FILE_NAME</code></pre>
+                <p>For example:</p>
+                <pre><code>git checkout -- index.html</code></pre>
+            
+                <h4>Remove files added to the staging area</h4>
+                <p>If you added a file with <code>git add</code> but don't want to include it in the next commit:</p>
+                <pre><code>git reset FILE_NAME</code></pre>
+                <p>Example:</p>
+                <pre><code>git reset index.html</code></pre>
+            
+                <h3>Revert a Commit</h3>
+                <p>If you've already committed changes but want to revert them, you can create a new commit that undoes the changes made:</p>
+                <pre><code>git revert COMMIT_ID</code></pre>
+                <p>You can get the <code>COMMIT_ID</code> using the command:</p>
+                <pre><code>git log</code></pre>
+                <p>For example:</p>
+                <pre><code>git revert a1b2c3d4</code></pre>
+                <p>This will open an editor to confirm the new commit that undoes the changes of the previous one.</p>
+            
+                <h3>Reset to the Previous State</h3>
+                <p>If you want to undo changes more drastically and don't need to keep the history, you can use <code>git reset</code>.</p>
+            
+                <h4>Reset to the Last Committed State</h4>
+                <p>To undo all changes since the last commit:</p>
+                <pre><code>git reset --hard</code></pre>
+                <p>Note: This will delete any uncommitted changes.</p>
+            
+                <h4>Reset to a Specific Commit</h4>
+                <p>To go back to a previous state in history:</p>
+                <pre><code>git reset --hard COMMIT_ID</code></pre>
+                <p>Example:</p>
+                <pre><code>git reset --hard a1b2c3d4</code></pre>
+                <p>Warning: This will rewrite the history, so use it carefully, especially if you've already shared commits with others.</p>
+            
+                <h3>Recover Deleted Files</h3>
+                <p>If you accidentally deleted a file but haven't committed the change yet, you can recover it:</p>
+                <pre><code>git checkout -- FILE_NAME</code></pre>
+                <p>For example:</p>
+                <pre><code>git checkout -- styles.css</code></pre>
+                <p>If you've already committed the deletion but want to recover the file, use:</p>
+                <pre><code>git checkout COMMIT_ID -- FILE_NAME</code></pre>
+                <p>For example:</p>
+                <pre><code>git checkout a1b2c3d4 -- styles.css</code></pre>
+                <p>This will restore the file from the specified commit.</p>
             </article>
         </section>
         <section class="main-section" id="Advanced_Concepts_of_Git">
-            <header id="Advanced_Concepts_of_Git">Advanced Concepts of Git</header>
+            <header id="Advanced_Concepts_of_Git"><h2>Advanced Git Concepts</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Submodules</h3>
+                <h4>What are submodules?</h4>
+                <p>A submodule in Git is a repository nested within another repository. They are used to include dependencies or related projects that need to remain separate but are part of the main project.</p>
+                <p>For example, if a project uses a library that is in its own repository, you can include it as a submodule instead of copying the code.</p>
+            
+                <h4>Adding and Managing Submodules</h4>
+                <p>To add a submodule, use the command:</p>
+                <pre><code>git submodule add REPOSITORY_URL DESTINATION_PATH</code></pre>
+                <p>Example:</p>
+                <pre><code>git submodule add https://github.com/user/library.git libs/library</code></pre>
+                <p>To initialize and clone all submodules in a repository:</p>
+                <pre><code>git submodule update --init --recursive</code></pre>
+                <p>If you want to update a submodule to its latest version:</p>
+                <pre><code>git submodule update --remote</code></pre>
+            
+                <h3>Git and CI/CD Services</h3>
+                <h4>Continuous Integration</h4>
+                <p>Continuous integration (CI) is a practice where every change in the code is automatically tested for issues. With Git, you can easily integrate it with CI services such as GitHub Actions, Travis CI, or GitLab CI.</p>
+                <p>An example configuration in GitHub Actions would be to create a <code>.github/workflows/ci.yml</code> file:</p>
+                <pre><code>name: CI
+                on:
+                  push:
+                    branches:
+                      - main
+                jobs:
+                  build:
+                    runs-on: ubuntu-latest
+                    steps:
+                      - uses: actions/checkout@v3
+                      - name: Set up environment
+                        run: npm install
+                      - name: Run tests
+                        run: npm test</code></pre>
+            
+                <h4>Automatic Deployment with Git</h4>
+                <p>Automatic deployment involves sending changes automatically to a production server or a testing environment after they are committed to a specific branch. This can be configured with tools such as:</p>
                 <ul>
-                    <li></li>
+                    <li><strong>GitHub Actions:</strong> Automates deployment to platforms like Heroku, AWS, or custom servers.</li>
+                    <li><strong>GitLab CI/CD:</strong> Set up a <code>.gitlab-ci.yml</code> file to define testing and deployment stages.</li>
                 </ul>
+                <p>For example, for deploying to Heroku:</p>
+                <pre><code>deploy:
+                  provider: heroku
+                  api_key: $HEROKU_API_KEY
+                  app: your-app-name</code></pre>
+            
+                <h3>Best Practices with Git</h3>
+                <h4>Naming Conventions</h4>
+                <p>It's important to follow clear conventions for branch, commit, and tag names:</p>
+                <ul>
+                    <li><strong>Branch names:</strong> Use descriptive names, such as <code>feature/new-feature</code>, <code>bugfix/fix-error</code>.</li>
+                    <li><strong>Tag names:</strong> Use semantic tags for releases, such as <code>v1.0.0</code>.</li>
+                </ul>
+            
+                <h4>Main and Feature Branches</h4>
+                <p>Adopt a well-defined workflow with branches, such as:</p>
+                <ul>
+                    <li><strong>main:</strong> Stable branch, ready for production.</li>
+                    <li><strong>develop:</strong> Development branch, where new features are integrated before being merged into <code>main</code>.</li>
+                    <li><strong>feature/*:</strong> Branches for developing new features.</li>
+                    <li><strong>hotfix/*:</strong> Branches for fixing critical bugs in production.</li>
+                </ul>
+                <p>This approach helps maintain control and organization in complex projects.</p>
             </article>
         </section>
         <section class="main-section" id="Tools_and_Additional_Resources">
-            <header id="Tools_and_Additional_Resources">Tools and Additional Resources</header>
+            <header id="Tools_and_Additional_Resources"><h2>Tools and Additional Resources</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Git in the Terminal</h3>
+                <p>Working with Git from the terminal is the most direct and powerful way to use it. With well-structured commands, you can perform all the necessary operations. Some advantages of using Git in the terminal are:</p>
                 <ul>
-                    <li></li>
+                    <li>Total control over Git operations.</li>
+                    <li>Speed and efficiency by not relying on graphical interfaces.</li>
+                    <li>A deep understanding of how Git works internally.</li>
                 </ul>
+                <p>To get started, make sure you have a terminal configured with access to Git. If you're using Windows, <code>Git Bash</code> is an excellent option. On macOS and Linux, the native terminal already includes support for Git after installation.</p>
+            
+                <h3>Git Graphical Interface</h3>
+                <p>If you prefer a more visual experience, there are many graphical tools for working with Git. Some popular options include:</p>
+                <ul>
+                    <li><strong>GitHub Desktop:</strong> Ideal for GitHub users, with a simple interface that is useful for beginners.</li>
+                    <li><strong>Sourcetree:</strong> Offers advanced features like branch visualization and conflict resolution, perfect for complex projects.</li>
+                    <li><strong>GitKraken:</strong> A modern, user-friendly tool for users of any experience level.</li>
+                    <li><strong>Visual Studio Code:</strong> With integrated extensions like GitLens, you can work with Git directly from your code editor.</li>
+                </ul>
+                <p>These tools are helpful for tasks such as visualizing history, resolving conflicts, and managing branches, especially if you are new to Git.</p>
+            
+                <h3>Resources to Learn More About Git</h3>
+                <p>Continuous learning is key to mastering Git. Here are some recommended resources:</p>
+                <h4>Official Documentation</h4>
+                <p>The official Git documentation is a comprehensive and detailed reference for all its features. You can find it at:</p>
+                <ul>
+                    <li><a href="https://git-scm.com/doc" target="_blank">https://git-scm.com/doc</a></li>
+                </ul>
+            
+                <h4>Recommended Tutorials</h4>
+                <p>Some tutorials and online courses can help you learn Git in a practical way:</p>
+                <ul>
+                    <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a>: A detailed guide from basic to advanced concepts.</li>
+                    <li><a href="https://www.freecodecamp.org/news/git-and-github-for-beginners/" target="_blank">FreeCodeCamp: Git and GitHub for Beginners</a>: An excellent starting point for beginners.</li>
+                    <li><a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book</a>: A free online book to dive deeper into Git.</li>
+                </ul>
+            
+                <h4>Forums and Communities</h4>
+                <p>Join active communities to solve problems, share knowledge, and stay up-to-date with best practices:</p>
+                <ul>
+                    <li><a href="https://stackoverflow.com/questions/tagged/git" target="_blank">Stack Overflow</a>: A global developer community where you can ask specific Git-related questions.</li>
+                    <li><a href="https://github.community/" target="_blank">GitHub Community</a>: The official GitHub forum for developers of all levels.</li>
+                    <li><a href="https://www.reddit.com/r/git/" target="_blank">Reddit: r/git</a>: A space to discuss Git-related topics.</li>
+                </ul>
+                <p>With these resources, you'll have a solid foundation to become a Git expert.</p>
             </article>
         </section>
         <section class="main-section" id="Reference">
-            <header id="Reference">Reference</header>
+            <header id="Reference"><h2>Reference</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Most Common Commands</h3>
+                <p>Below is a list of the most commonly used Git commands, with a brief description of their function:</p>
                 <ul>
-                    <li></li>
+                    <li><code>git init</code>: Initializes a new Git repository in the current folder.</li>
+                    <li><code>git clone [URL]</code>: Clones a remote repository to your local system.</li>
+                    <li><code>git status</code>: Displays the current status of the repository, including unadded and uncommitted changes.</li>
+                    <li><code>git add [file]</code>: Adds a specific file to the staging area.</li>
+                    <li><code>git add .</code>: Adds all modified files to the staging area.</li>
+                    <li><code>git commit -m "message"</code>: Saves changes to the repository with an explanatory message.</li>
+                    <li><code>git push origin [branch]</code>: Pushes changes to the remote repository on the specified branch.</li>
+                    <li><code>git pull</code>: Fetches and merges changes from the remote repository.</li>
+                    <li><code>git branch</code>: Displays a list of existing branches and highlights the current branch.</li>
+                    <li><code>git checkout [branch]</code>: Switches to the specified branch.</li>
+                    <li><code>git merge [branch]</code>: Merges changes from a specific branch into the current branch.</li>
+                    <li><code>git log</code>: Displays the commit history of the repository.</li>
+                    <li><code>git reset [file]</code>: Removes a file from the staging area.</li>
+                    <li><code>git revert [commit]</code>: Creates a new commit that reverts the changes of a previous commit.</li>
                 </ul>
+        
+                <h3>Quick Command Reference Table</h3>
+                <p>A compact table for quickly referencing essential commands:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>git init</code></td>
+                            <td>Initializes a repository.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git clone [URL]</code></td>
+                            <td>Clones a remote repository.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git status</code></td>
+                            <td>Displays the current status of the repository.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git add [file]</code></td>
+                            <td>Adds a file to the staging area.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git commit -m "message"</code></td>
+                            <td>Creates a new commit.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git push</code></td>
+                            <td>Pushes changes to the remote repository.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git pull</code></td>
+                            <td>Fetches and merges changes from the remote repository.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git branch</code></td>
+                            <td>Displays available branches.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git checkout</code></td>
+                            <td>Switches branches.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git merge</code></td>
+                            <td>Merges changes from another branch.</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <h3>Git Terminology Glossary</h3>
+                <p>Some key terms that will help you understand Git:</p>
+                <dl>
+                    <dt>Repository</dt>
+                    <dd>The location where Git stores the project’s change history and files.</dd>
+        
+                    <dt>Commit</dt>
+                    <dd>A save point in the project’s history that includes changes made to files.</dd>
+        
+                    <dt>Branch</dt>
+                    <dd>An independent line of development within the repository.</dd>
+        
+                    <dt>Remote</dt>
+                    <dd>A repository hosted on an external server, such as GitHub or GitLab.</dd>
+        
+                    <dt>Staging Area</dt>
+                    <dd>An intermediate stage where you select the changes to include in the next commit.</dd>
+        
+                    <dt>Merge</dt>
+                    <dd>The action of combining changes from one branch into another.</dd>
+        
+                    <dt>Rebase</dt>
+                    <dd>A method for moving or combining commits onto a new base in history.</dd>
+        
+                    <dt>Conflict</dt>
+                    <dd>Occurs when two branches have incompatible changes in the same file.</dd>
+        
+                    <dt>Tag</dt>
+                    <dd>A marker to identify specific points in history, such as released versions.</dd>
+                </dl>
             </article>
         </section>
         <footer id="footer">
-            <p>This webpage was created by endiva112 [Enrique Díaz] as part of the FreeCodeCamp course, following the project requirements for the Tribute Page exercise.</p>
+            <p>This webpage was created by endiva112 [Enrique Díaz] as part of the FreeCodeCamp course, following the project requirements for the Technical Documentation Page exercise.</p>
             <p>
                 Check out the project repository on 
                 <a href="https://github.com/endiva112/proyectos-freecodecamp/tree/main/html-css/14.technical-documentation-page(certified_project)" target="_blank">GitHub</a> 

@@ -47,7 +47,7 @@
         </nav>
         
         <section class="main-section" id="Introduccion_a_Git">
-            <header id="Introduccion_a_Git"><h2>Introduccion a Git</h2></header>
+            <header id="Introduccion_a_Git"><h2>Introducción a Git</h2></header>
             <article>
                 <h3>¿Qué es Git?</h3>
                 <p>Git es un sistema de control de versiones distribuido diseñado para rastrear los cambios realizados en los archivos de un proyecto. Fue creado por Linus Torvalds en 2005 para gestionar el desarrollo del núcleo de Linux.</p>
@@ -67,12 +67,12 @@
                     <li>Flexibilidad: Funciona para proyectos de cualquier tamaño y complejidad.</li>
                 </ol>
                 <h3>Instalación de Git</h3>
-                <p>Para comenzar a usar Git, primero necesitas instalarlo en tu ordenador. Veamos como hacerlo dependiendo de tu sistema operativo.</p>
+                <p>Para comenzar a usar Git, primero necesitas instalarlo en tu ordenador. Veamos cómo hacerlo dependiendo de tu sistema operativo.</p>
                 <ol>
                     <li>
                         <h4>Windows</h4>
                         <ul>
-                            <li>Descarga el instalador desde https://git-scm.com.</li>
+                            <li>Descarga el instalador desde <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>.</li>
                             <li>Ejecuta el archivo descargado y sigue las instrucciones del asistente.</li>
                             <li>Durante la instalación, se te pedirá que elijas configuraciones como el editor predeterminado. Puedes mantener las opciones recomendadas.</li>
                         </ul>
@@ -81,8 +81,8 @@
                         <h4>MacOS</h4>
                         <ul>
                             <li>Si tienes Homebrew instalado, puedes instalar Git con:</li>
-                            <code>brew install git</code>
-                            <li>También puedes descargarlo directamente desde https://git-scm.com.</li>
+                            <pre><code>brew install git</code></pre>
+                            <li>También puedes descargarlo directamente desde <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>.</li>
                         </ul>
                     </li>
                     <li>
@@ -90,12 +90,12 @@
                         <p>Usa el gestor de paquetes de tu distribución para instalar Git. Algunos ejemplos:</p>
                         <ul>
                             <li>Ubuntu/Debian:</li>
-                            <code>sudo apt-get install git</code>
+                            <pre><code>sudo apt-get install git</code></pre>
                             <li>CentOS/Fedora:</li>
-                            <code>sudo yum install git</code>
+                            <pre><code>sudo yum install git</code></pre>
                         </ul>
                         <p>Para verificar que Git está instalado correctamente, ejecuta:</p>
-                        <code>git --version</code>
+                        <pre><code>git --version</code></pre>
                     </li>
                 </ol>
                 <h3>Configuración inicial de Git</h3>
@@ -107,114 +107,520 @@
                         <ul>
                             <li>
                                 <p>Configura tu nombre:</p>
-                                <code>git config --global user.name "TuNombre"</code>
+                                <pre><code>git config --global user.name "TuNombre"</code></pre>
                             </li>
                             <li>
                                 <p>Configura tu correo electrónico:</p>
-                                <code>git config --global user.email "TuCorreo@example.com"</code>
+                                <pre><code>git config --global user.email "TuCorreo@example.com"</code></pre>
                             </li>
-                            <p>Para verificar tu configuración, utiliza:</p>
-                            <code>git config --global --list</code>
+                            <li>
+                                <p>Para verificar tu configuración, utiliza:</p>
+                                <pre><code>git config --global --list</code></pre>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <h4>Configuración de editor predeterminado</h4>
                         <p>Git utiliza un editor de texto para tareas como escribir mensajes de commit largos. Por defecto, suele usar <code>vim</code>, pero puedes cambiarlo al que prefieras. Por ejemplo:</p>
+                        <ul>
+                            <li>Para configurar Visual Studio Code como editor predeterminado:</li>
+                            <pre><code>git config --global core.editor "code --wait"</code></pre>
+                            <li>Para configurar Nano como editor predeterminado:</li>
+                            <pre><code>git config --global core.editor "nano"</code></pre>
+                        </ul>
                     </li>
                 </ol>
-
             </article>
         </section>
         <section class="main-section" id="Conceptos_Basicos_de_Git">
-            <header id="Conceptos_Basicos_de_Git">Conceptos Básicos de Git</header>
+            <header id="Conceptos_Basicos_de_Git"><h2>Conceptos Básicos de Git</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Repositorios</h3>
+                <p>Un repositorio en Git es el espacio donde se almacenan los archivos de un proyecto junto con su historial de cambios. Puede ser local (en tu máquina) o remoto (en una plataforma como GitHub o GitLab).</p>
+                
+                <h4>Crear un repositorio</h4>
+                <p>Para crear un repositorio local, usa el comando:</p>
+                <pre><code>git init</code></pre>
+                <p>Este comando inicializa un nuevo repositorio vacío en el directorio actual.</p>
+                
+                <h4>Clonar un repositorio</h4>
+                <p>Para obtener una copia de un repositorio remoto en tu máquina local, usa:</p>
+                <pre><code>git clone URL_DEL_REPOSITORIO</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
+                <p>Esto descargará todos los archivos y el historial del repositorio remoto.</p>
+                
+                <h3>Ramas</h3>
+                <p>Las ramas son versiones independientes de tu proyecto que puedes desarrollar en paralelo. El uso de ramas facilita trabajar en nuevas características sin afectar la rama principal.</p>
+                
+                <h4>Crear una rama</h4>
+                <p>Para crear una nueva rama, usa:</p>
+                <pre><code>git branch nombre_de_la_rama</code></pre>
+                <p>Por ejemplo, para crear una rama llamada <code>nueva-funcionalidad</code>:</p>
+                <pre><code>git branch nueva-funcionalidad</code></pre>
+                
+                <h4>Cambiar de rama</h4>
+                <p>Para cambiar a una rama existente, usa:</p>
+                <pre><code>git checkout nombre_de_la_rama</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git checkout nueva-funcionalidad</code></pre>
+                <p>También puedes crear una nueva rama y cambiar a ella de inmediato con:</p>
+                <pre><code>git checkout -b nombre_de_la_rama</code></pre>
+                
+                <h4>El flujo de trabajo básico con ramas</h4>
+                <p>Un flujo de trabajo típico con ramas es:</p>
+                <ol>
+                    <li>Crear una nueva rama para la característica en la que deseas trabajar.</li>
+                    <li>Realizar cambios y commits en esa rama.</li>
+                    <li>Fusionar la rama de características con la rama principal una vez completado el trabajo.</li>
+                </ol>
+                
+                <h3>Commits</h3>
+                <p>Los commits son "instantáneas" del estado de los archivos en un momento dado. Cada commit incluye un mensaje que describe los cambios realizados.</p>
+                
+                <h4>Crear un commit</h4>
+                <p>Después de realizar cambios en los archivos, usa los siguientes comandos:</p>
+                <ol>
+                    <li>Añade los archivos al área de preparación:</li>
+                    <pre><code>git add archivo_o_carpeta</code></pre>
+                    <p>Para añadir todos los archivos, usa:</p>
+                    <pre><code>git add .</code></pre>
+                    <li>Crea el commit con un mensaje descriptivo:</li>
+                    <pre><code>git commit -m "Mensaje que describe los cambios"</code></pre>
+                </ol>
+                
+                <h4>Mensajes de commit efectivos</h4>
+                <p>Un buen mensaje de commit debe ser claro y descriptivo. Sigue estas pautas:</p>
                 <ul>
-                    <li></li>
+                    <li>Usa el modo imperativo (ej. "Añadir función de búsqueda").</li>
+                    <li>Mantén los mensajes cortos y precisos.</li>
+                    <li>Explica el porqué del cambio si es necesario.</li>
                 </ul>
+                
+                <h4>Visualizar historial de commits</h4>
+                <p>Para ver el historial de commits de un repositorio, usa:</p>
+                <pre><code>git log</code></pre>
+                <p>Esto mostrará información detallada de cada commit, como su autor, fecha y mensaje.</p>
+                <p>Para un historial más compacto, usa:</p>
+                <pre><code>git log --oneline</code></pre>
             </article>
         </section>
         <section class="main-section" id="Trabajo_en_Equipo_con_Git">
-            <header id="Trabajo_en_Equipo_con_Git">Trabajo en Equipo con Git</header>
+            <header id="Trabajo_en_Equipo_con_Git"><h2>Trabajo en Equipo con Git</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Remotos</h3>
+                <p>Los remotos son repositorios alojados en plataformas como GitHub, GitLab o Bitbucket. Permiten colaborar con otros desarrolladores al sincronizar cambios entre el repositorio local y el remoto.</p>
+                
+                <h4>Añadir un remoto</h4>
+                <p>Para vincular tu repositorio local con un repositorio remoto, usa:</p>
+                <pre><code>git remote add origin URL_DEL_REPOSITORIO</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
+                <p>Para verificar los remotos configurados, usa:</p>
+                <pre><code>git remote -v</code></pre>
+                
+                <h4>Obtener cambios del remoto (pull y fetch)</h4>
+                <p>Para traer los cambios más recientes desde el remoto a tu repositorio local, puedes usar:</p>
                 <ul>
-                    <li></li>
+                    <li><strong>git fetch:</strong> Obtiene los cambios remotos pero no los combina con tu rama local.</li>
+                    <li><strong>git pull:</strong> Obtiene los cambios remotos y los combina automáticamente con tu rama actual.</li>
+                </ul>
+                <p>Comando para hacer un pull:</p>
+                <pre><code>git pull origin rama</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git pull origin main</code></pre>
+                
+                <h4>Subir cambios al remoto (push)</h4>
+                <p>Para enviar los cambios desde tu repositorio local al remoto, usa:</p>
+                <pre><code>git push origin rama</code></pre>
+                <p>Por ejemplo, para subir los cambios a la rama <code>main</code>:</p>
+                <pre><code>git push origin main</code></pre>
+                
+                <h3>Resolución de conflictos</h3>
+                <h4>¿Qué son los conflictos?</h4>
+                <p>Un conflicto ocurre cuando Git no puede combinar automáticamente los cambios realizados en las mismas líneas de un archivo por diferentes colaboradores. Esto suele ocurrir al hacer un merge o un pull.</p>
+                
+                <h4>Estrategias para resolver conflictos</h4>
+                <ol>
+                    <li>Cuando ocurre un conflicto, Git marcará las áreas en conflicto en los archivos afectados.</li>
+                    <li>Edita el archivo para seleccionar qué cambios mantener.</li>
+                    <li>Guarda el archivo y marca el conflicto como resuelto con:</li>
+                    <pre><code>git add archivo_afectado</code></pre>
+                    <li>Finaliza el merge con:</li>
+                    <pre><code>git commit</code></pre>
+                </ol>
+                <p>Para evitar conflictos:</p>
+                <ul>
+                    <li>Haz pull frecuentemente para mantener tu rama actualizada.</li>
+                    <li>Comunica cambios importantes con tu equipo.</li>
+                </ul>
+                
+                <h3>Pull requests y merge requests</h3>
+                <h4>¿Qué son y cuándo usarlas?</h4>
+                <p>Un <strong>pull request</strong> (en GitHub) o <strong>merge request</strong> (en GitLab) es una solicitud para fusionar cambios desde una rama a otra. Estas herramientas facilitan la revisión de código antes de combinar los cambios.</p>
+                <p>Proceso típico:</p>
+                <ol>
+                    <li>Sube tus cambios a una rama en el repositorio remoto.</li>
+                    <li>Crea una pull request desde la interfaz de la plataforma.</li>
+                    <li>Espera la revisión y aprobación de otros miembros del equipo.</li>
+                    <li>Una vez aprobado, realiza el merge.</li>
+                </ol>
+                <p>Beneficios:</p>
+                <ul>
+                    <li>Permite una revisión colaborativa de código.</li>
+                    <li>Facilita la discusión sobre cambios específicos.</li>
+                    <li>Ayuda a mantener un historial claro y organizado del proyecto.</li>
                 </ul>
             </article>
         </section>
         <section class="main-section" id="Flujo_de_Trabajo_Avanzado">
-            <header id="Flujo_de_Trabajo_Avanzado">Flujo de Trabajo Avanzado</header>
+            <header id="Flujo_de_Trabajo_Avanzado"><h2>Flujo de Trabajo Avanzado</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Rebases</h3>
+                <h4>¿Qué es un rebase?</h4>
+                <p>El rebase es una alternativa al <code>merge</code> que reescribe el historial de commits para aplicar los cambios de una rama sobre otra como si se hubieran realizado en secuencia. Esto da como resultado un historial más lineal y fácil de leer.</p>
+                <p>Comando básico:</p>
+                <pre><code>git rebase rama_base</code></pre>
+                <p>Por ejemplo, para aplicar los cambios de tu rama actual sobre la rama <code>main</code>:</p>
+                <pre><code>git rebase main</code></pre>
+        
+                <h4>Rebase interactivo</h4>
+                <p>El rebase interactivo te permite modificar, combinar o eliminar commits durante el proceso de rebase. Es útil para limpiar el historial antes de subir los cambios.</p>
+                <p>Comando para iniciar un rebase interactivo:</p>
+                <pre><code>git rebase -i HEAD~n</code></pre>
+                <p>Donde <code>n</code> es el número de commits recientes que quieres modificar.</p>
+                <p>Durante el proceso, puedes realizar acciones como:</p>
                 <ul>
-                    <li></li>
+                    <li><strong>pick:</strong> Mantener el commit tal como está.</li>
+                    <li><strong>reword:</strong> Cambiar el mensaje del commit.</li>
+                    <li><strong>edit:</strong> Pausar para modificar el contenido del commit.</li>
+                    <li><strong>squash:</strong> Combinar varios commits en uno.</li>
+                    <li><strong>drop:</strong> Eliminar un commit.</li>
                 </ul>
+        
+                <h3>Stashing</h3>
+                <h4>Guardar cambios temporalmente</h4>
+                <p>El comando <code>git stash</code> guarda tus cambios actuales de forma temporal para que puedas cambiar de rama o realizar otras acciones sin perder tu trabajo no comprometido.</p>
+                <p>Comando para guardar cambios:</p>
+                <pre><code>git stash</code></pre>
+                <p>Para agregar una descripción al stash:</p>
+                <pre><code>git stash save "Descripción"</code></pre>
+        
+                <h4>Recuperar cambios guardados</h4>
+                <p>Para recuperar los cambios guardados más recientemente:</p>
+                <pre><code>git stash apply</code></pre>
+                <p>Para recuperar y eliminar el stash de la lista:</p>
+                <pre><code>git stash pop</code></pre>
+                <p>Para listar todos los stashes guardados:</p>
+                <pre><code>git stash list</code></pre>
+        
+                <h3>Cherry-picking</h3>
+                <h4>Aplicar commits específicos a otra rama</h4>
+                <p>El cherry-picking permite aplicar un commit específico de una rama a otra, sin realizar un merge completo.</p>
+                <p>Comando básico:</p>
+                <pre><code>git cherry-pick ID_DEL_COMMIT</code></pre>
+                <p>Para obtener el ID del commit, puedes usar:</p>
+                <pre><code>git log</code></pre>
+                <p>Ejemplo:</p>
+                <pre><code>git cherry-pick a1b2c3d4</code></pre>
+        
+                <h3>Git hooks</h3>
+                <p>Los <strong>hooks de Git</strong> son scripts que se ejecutan automáticamente antes o después de eventos clave, como commits, merges o pushes. Son útiles para automatizar tareas como verificar el código o desplegar aplicaciones.</p>
+        
+                <h4>Personalización y automatización con hooks</h4>
+                <p>Los hooks se encuentran en el directorio <code>.git/hooks</code> de tu repositorio. Algunos hooks comunes son:</p>
+                <ul>
+                    <li><code>pre-commit:</code> Se ejecuta antes de realizar un commit. Útil para verificar el formato del código.</li>
+                    <li><code>pre-push:</code> Se ejecuta antes de enviar los cambios al remoto. Puedes usarlo para correr pruebas automatizadas.</li>
+                    <li><code>post-merge:</code> Se ejecuta después de un merge. Puede ser útil para actualizar dependencias.</li>
+                </ul>
+                <p>Para habilitar un hook, crea o edita el archivo correspondiente, por ejemplo:</p>
+                <pre><code>nano .git/hooks/pre-commit</code></pre>
+                <p>Asegúrate de que el archivo sea ejecutable:</p>
+                <pre><code>chmod +x .git/hooks/pre-commit</code></pre>
             </article>
         </section>
         <section class="main-section" id="Gestion_de_Errores">
-            <header id="Gestion_de_Errores">Gestión de Errores</header>
+            <header id="Gestion_de_Errores"><h2>Gestión de Errores</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
-                <ul>
-                    <li></li>
-                </ul>
+                <h3>Deshacer cambios</h3>
+                <p>En Git, es común cometer errores o necesitar deshacer ciertos cambios. Dependiendo de la situación, puedes usar diferentes comandos:</p>
+                <h4>Deshacer cambios en archivos no añadidos al área de preparación</h4>
+                <p>Si modificaste un archivo pero aún no usaste <code>git add</code>, puedes revertirlo a su última versión confirmada con:</p>
+                <pre><code>git checkout -- NOMBRE_ARCHIVO</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git checkout -- index.html</code></pre>
+        
+                <h4>Eliminar archivos añadidos al área de preparación</h4>
+                <p>Si añadiste un archivo con <code>git add</code> pero no quieres incluirlo en el próximo commit:</p>
+                <pre><code>git reset NOMBRE_ARCHIVO</code></pre>
+                <p>Ejemplo:</p>
+                <pre><code>git reset index.html</code></pre>
+        
+                <h3>Revertir un commit</h3>
+                <p>Si ya realizaste un commit pero deseas revertirlo, puedes crear un nuevo commit que deshaga los cambios realizados:</p>
+                <pre><code>git revert ID_DEL_COMMIT</code></pre>
+                <p>El <code>ID_DEL_COMMIT</code> puede obtenerse con el comando:</p>
+                <pre><code>git log</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git revert a1b2c3d4</code></pre>
+                <p>Esto abrirá un editor para confirmar el nuevo commit que deshace los cambios del anterior.</p>
+        
+                <h3>Restablecer al estado anterior</h3>
+                <p>Si quieres deshacer cambios de forma más drástica y no necesitas conservar el historial, puedes usar <code>git reset</code>.</p>
+                <h4>Restablecer al último commit confirmado</h4>
+                <p>Para deshacer todos los cambios desde el último commit:</p>
+                <pre><code>git reset --hard</code></pre>
+                <p>Nota: Esto eliminará cualquier cambio no confirmado.</p>
+        
+                <h4>Restablecer a un commit específico</h4>
+                <p>Para volver a un estado anterior en el historial:</p>
+                <pre><code>git reset --hard ID_DEL_COMMIT</code></pre>
+                <p>Ejemplo:</p>
+                <pre><code>git reset --hard a1b2c3d4</code></pre>
+                <p>Advertencia: Esto reescribirá el historial, así que úsalo con precaución, especialmente si ya compartiste los commits con otros.</p>
+        
+                <h3>Recuperar archivos eliminados</h3>
+                <p>Si eliminaste un archivo accidentalmente pero aún no confirmaste el cambio, puedes recuperarlo:</p>
+                <pre><code>git checkout -- NOMBRE_ARCHIVO</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git checkout -- styles.css</code></pre>
+                <p>Si ya confirmaste la eliminación pero deseas recuperarlo, utiliza:</p>
+                <pre><code>git checkout ID_DEL_COMMIT -- NOMBRE_ARCHIVO</code></pre>
+                <p>Por ejemplo:</p>
+                <pre><code>git checkout a1b2c3d4 -- styles.css</code></pre>
+                <p>Esto restaurará el archivo desde el commit especificado.</p>
             </article>
         </section>
         <section class="main-section" id="Conceptos_Avanzados_de_Git">
-            <header id="Conceptos_Avanzados_de_Git">Conceptos Avanzados de Git</header>
+            <header id="Conceptos_Avanzados_de_Git"><h2>Conceptos Avanzados de Git</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Submódulos</h3>
+                <h4>¿Qué son los submódulos?</h4>
+                <p>Un submódulo en Git es un repositorio anidado dentro de otro repositorio. Se utilizan para incluir dependencias o proyectos relacionados que necesitan mantenerse separados pero que forman parte del proyecto principal.</p>
+                <p>Por ejemplo, si un proyecto utiliza una biblioteca que está en su propio repositorio, puedes incluirla como un submódulo en lugar de copiar el código.</p>
+        
+                <h4>Añadir y gestionar submódulos</h4>
+                <p>Para añadir un submódulo, utiliza el comando:</p>
+                <pre><code>git submodule add URL_DEL_REPOSITORIO RUTA_DESTINO</code></pre>
+                <p>Ejemplo:</p>
+                <pre><code>git submodule add https://github.com/usuario/biblioteca.git libs/biblioteca</code></pre>
+                <p>Para inicializar y clonar todos los submódulos en un repositorio:</p>
+                <pre><code>git submodule update --init --recursive</code></pre>
+                <p>Si deseas actualizar un submódulo a su última versión:</p>
+                <pre><code>git submodule update --remote</code></pre>
+        
+                <h3>Git y servicios de CI/CD</h3>
+                <h4>Integración continua</h4>
+                <p>La integración continua (CI) es una práctica en la que cada cambio en el código se prueba automáticamente para detectar problemas. Con Git, puedes integrarlo fácilmente con servicios de CI como GitHub Actions, Travis CI o GitLab CI.</p>
+                <p>Un ejemplo de configuración en GitHub Actions sería crear un archivo <code>.github/workflows/ci.yml</code>:</p>
+                <pre><code>name: CI
+        on:
+          push:
+            branches:
+              - main
+        jobs:
+          build:
+            runs-on: ubuntu-latest
+            steps:
+              - uses: actions/checkout@v3
+              - name: Configurar entorno
+                run: npm install
+              - name: Ejecutar pruebas
+                run: npm test</code></pre>
+        
+                <h4>Deploy automático con Git</h4>
+                <p>El deploy automático implica enviar cambios automáticamente a un servidor de producción o un entorno de prueba después de confirmarlos en una rama específica. Esto puede configurarse con herramientas como:</p>
                 <ul>
-                    <li></li>
+                    <li><strong>GitHub Actions:</strong> Automatiza el despliegue a plataformas como Heroku, AWS o servidores personalizados.</li>
+                    <li><strong>GitLab CI/CD:</strong> Configura un <code>.gitlab-ci.yml</code> para definir etapas de prueba y despliegue.</li>
                 </ul>
+                <p>Por ejemplo, para un despliegue a Heroku:</p>
+                <pre><code>deploy:
+          provider: heroku
+          api_key: $HEROKU_API_KEY
+          app: nombre-de-tu-app</code></pre>
+        
+                <h3>Buenas prácticas con Git</h3>
+                <h4>Convenciones de nombres</h4>
+                <p>Es importante seguir convenciones claras para los nombres de ramas, commits y etiquetas:</p>
+                <ul>
+                    <li><strong>Nombres de ramas:</strong> Usa nombres descriptivos, como <code>feature/nueva-funcionalidad</code>, <code>bugfix/arreglo-de-error</code>.</li>
+                    <li><strong>Nombres de etiquetas:</strong> Usa etiquetas semánticas para releases, como <code>v1.0.0</code>.</li>
+                </ul>
+        
+                <h4>Ramas principales y de características</h4>
+                <p>Adopta un flujo de trabajo con ramas bien definido, como:</p>
+                <ul>
+                    <li><strong>main:</strong> Rama estable, lista para producción.</li>
+                    <li><strong>develop:</strong> Rama de desarrollo, donde se integran nuevas características antes de pasarlas a <code>main</code>.</li>
+                    <li><strong>feature/*:</strong> Ramas para desarrollar nuevas funcionalidades.</li>
+                    <li><strong>hotfix/*:</strong> Ramas para corregir errores críticos en producción.</li>
+                </ul>
+                <p>Este enfoque ayuda a mantener el control y la organización en proyectos complejos.</p>
             </article>
         </section>
         <section class="main-section" id="Herramientas_y_Recursos_Adicionales">
-            <header id="Herramientas_y_Recursos_Adicionales">Herramientas y Recursos Adicionales</header>
+            <header id="Herramientas_y_Recursos_Adicionales"><h2>Herramientas y Recursos Adicionales</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Git en la terminal</h3>
+                <p>Trabajar con Git desde la terminal es la forma más directa y potente de utilizarlo. Con comandos bien estructurados, puedes realizar todas las operaciones necesarias. Algunas ventajas de usar Git en la terminal son:</p>
                 <ul>
-                    <li></li>
+                    <li>Control total sobre las operaciones de Git.</li>
+                    <li>Velocidad y eficiencia al no depender de interfaces gráficas.</li>
+                    <li>Aprendizaje profundo de cómo funciona Git internamente.</li>
                 </ul>
+                <p>Para empezar, asegúrate de tener un terminal configurado con acceso a Git. Si usas Windows, <code>Git Bash</code> es una excelente opción. En macOS y Linux, el terminal nativo ya incluye soporte para Git después de instalarlo.</p>
+        
+                <h3>Interfaz gráfica de Git</h3>
+                <p>Si prefieres una experiencia más visual, existen muchas herramientas gráficas para trabajar con Git. Algunas opciones populares incluyen:</p>
+                <ul>
+                    <li><strong>GitHub Desktop:</strong> Ideal para usuarios de GitHub, con una interfaz sencilla y útil para principiantes.</li>
+                    <li><strong>Sourcetree:</strong> Ofrece funciones avanzadas como visualización de ramas y resolución de conflictos, ideal para proyectos complejos.</li>
+                    <li><strong>GitKraken:</strong> Una herramienta moderna y amigable para usuarios con cualquier nivel de experiencia.</li>
+                    <li><strong>Visual Studio Code:</strong> Con extensiones integradas como GitLens, puedes trabajar con Git directamente desde tu editor de código.</li>
+                </ul>
+                <p>Estas herramientas son útiles para tareas como visualización del historial, resolución de conflictos y manejo de ramas, especialmente si estás empezando con Git.</p>
+        
+                <h3>Recursos para aprender más sobre Git</h3>
+                <p>El aprendizaje continuo es clave para dominar Git. Aquí tienes una selección de recursos recomendados:</p>
+                <h4>Documentación oficial</h4>
+                <p>La documentación oficial de Git es una referencia completa y detallada sobre todas sus características. Puedes encontrarla en:</p>
+                <ul>
+                    <li><a href="https://git-scm.com/doc" target="_blank">https://git-scm.com/doc</a></li>
+                </ul>
+        
+                <h4>Tutoriales recomendados</h4>
+                <p>Algunos tutoriales y cursos en línea te pueden ayudar a aprender Git de manera práctica:</p>
+                <ul>
+                    <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a>: Una guía detallada desde conceptos básicos hasta avanzados.</li>
+                    <li><a href="https://www.freecodecamp.org/news/git-and-github-for-beginners/" target="_blank">FreeCodeCamp: Git and GitHub for Beginners</a>: Un excelente punto de partida para principiantes.</li>
+                    <li><a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book</a>: Un libro gratuito en línea para profundizar en Git.</li>
+                </ul>
+        
+                <h4>Foros y comunidades</h4>
+                <p>Únete a comunidades activas para resolver dudas, compartir conocimientos y estar al día con las mejores prácticas:</p>
+                <ul>
+                    <li><a href="https://stackoverflow.com/questions/tagged/git" target="_blank">Stack Overflow</a>: Una comunidad global de desarrolladores donde puedes hacer preguntas específicas sobre Git.</li>
+                    <li><a href="https://github.community/" target="_blank">GitHub Community</a>: El foro oficial de GitHub para desarrolladores de todos los niveles.</li>
+                    <li><a href="https://www.reddit.com/r/git/" target="_blank">Reddit: r/git</a>: Un espacio para discutir temas relacionados con Git.</li>
+                </ul>
+                <p>Con estos recursos, tendrás una base sólida para convertirte en un experto en Git.</p>
             </article>
         </section>
         <section class="main-section" id="Referencia">
-            <header id="Referencia">Referencia</header>
+            <header id="Referencia"><h2>Referencia</h2></header>
             <article>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <code>console.log("hello world")</code>
+                <h3>Comandos más comunes</h3>
+                <p>A continuación, se presenta una lista de los comandos de Git más utilizados, con una breve descripción de su función:</p>
                 <ul>
-                    <li></li>
+                    <li><code>git init</code>: Inicializa un nuevo repositorio de Git en la carpeta actual.</li>
+                    <li><code>git clone [URL]</code>: Clona un repositorio remoto en tu sistema local.</li>
+                    <li><code>git status</code>: Muestra el estado actual del repositorio, incluyendo cambios sin añadir y sin confirmar.</li>
+                    <li><code>git add [archivo]</code>: Añade un archivo específico al área de preparación.</li>
+                    <li><code>git add .</code>: Añade todos los archivos modificados al área de preparación.</li>
+                    <li><code>git commit -m "mensaje"</code>: Guarda los cambios en el repositorio con un mensaje explicativo.</li>
+                    <li><code>git push origin [rama]</code>: Sube los cambios al repositorio remoto en la rama especificada.</li>
+                    <li><code>git pull</code>: Obtiene y fusiona los cambios del repositorio remoto.</li>
+                    <li><code>git branch</code>: Muestra la lista de ramas existentes y resalta la rama actual.</li>
+                    <li><code>git checkout [rama]</code>: Cambia a la rama especificada.</li>
+                    <li><code>git merge [rama]</code>: Fusiona los cambios de una rama específica en la rama actual.</li>
+                    <li><code>git log</code>: Muestra el historial de commits del repositorio.</li>
+                    <li><code>git reset [archivo]</code>: Elimina un archivo del área de preparación.</li>
+                    <li><code>git revert [commit]</code>: Crea un nuevo commit que revierte los cambios de un commit anterior.</li>
                 </ul>
+        
+                <h3>Tabla de comandos rápidos</h3>
+                <p>Una tabla compacta para consultar rápidamente los comandos esenciales:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>git init</code></td>
+                            <td>Inicializa un repositorio.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git clone [URL]</code></td>
+                            <td>Clona un repositorio remoto.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git status</code></td>
+                            <td>Muestra el estado actual del repositorio.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git add [archivo]</code></td>
+                            <td>Añade un archivo al área de preparación.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git commit -m "mensaje"</code></td>
+                            <td>Crea un nuevo commit.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git push</code></td>
+                            <td>Sube cambios al remoto.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git pull</code></td>
+                            <td>Obtiene y fusiona cambios del remoto.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git branch</code></td>
+                            <td>Muestra las ramas disponibles.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git checkout</code></td>
+                            <td>Cambia de rama.</td>
+                        </tr>
+                        <tr>
+                            <td><code>git merge</code></td>
+                            <td>Fusiona cambios de otra rama.</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <h3>Glosario de términos de Git</h3>
+                <p>Algunos términos clave que te ayudarán a entender Git:</p>
+                <dl>
+                    <dt>Repositorio</dt>
+                    <dd>El lugar donde Git almacena el historial de cambios y los archivos del proyecto.</dd>
+        
+                    <dt>Commit</dt>
+                    <dd>Un punto de guardado en el historial del proyecto que incluye los cambios realizados en los archivos.</dd>
+        
+                    <dt>Rama</dt>
+                    <dd>Una línea de desarrollo independiente dentro del repositorio.</dd>
+        
+                    <dt>Remoto</dt>
+                    <dd>Un repositorio alojado en un servidor externo, como GitHub o GitLab.</dd>
+        
+                    <dt>Staging (Área de preparación)</dt>
+                    <dd>Una etapa intermedia donde seleccionas los cambios que deseas incluir en el próximo commit.</dd>
+        
+                    <dt>Merge</dt>
+                    <dd>La acción de combinar los cambios de una rama en otra.</dd>
+        
+                    <dt>Rebase</dt>
+                    <dd>Un método para mover o combinar commits en una nueva base en el historial.</dd>
+        
+                    <dt>Conflicto</dt>
+                    <dd>Ocurre cuando dos ramas tienen cambios incompatibles en el mismo archivo.</dd>
+        
+                    <dt>Tag</dt>
+                    <dd>Un marcador para identificar puntos específicos en el historial, como versiones lanzadas.</dd>
+                </dl>
             </article>
         </section>
         <footer id="footer">
-            <p>This webpage was created by endiva112 [Enrique Díaz] as part of the FreeCodeCamp course, following the project requirements for the Tribute Page exercise.</p>
+            <p>Esta página web ha sido creada por endiva112 [Enrique Díaz] como parte de mi curso en FreeCodeCamp, siguiendo los requisitos del proyecto para el ejercico de Web de Documentación Técnica</p>
             <p>
-                Check out the project repository on 
-                <a href="https://github.com/endiva112/proyectos-freecodecamp/tree/main/html-css/14.technical-documentation-page(certified_project)" target="_blank">GitHub</a> 
-                and connect with me on 
+                Echale un vistazo al repositorio del proyecto en
+                <a href="https://github.com/endiva112/proyectos-freecodecamp/tree/main/html-css/14.technical-documentation-page(certified_project)" target="_blank">GitHub</a>
+                y conecta conmigo en
                 <a href="https://www.linkedin.com/in/enriquediazvalenzuela" target="_blank">LinkedIn</a>.
             </p>
         </footer>
