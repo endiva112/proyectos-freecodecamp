@@ -296,10 +296,77 @@ footer a:active {
     color: #a8dadc;
 }
 
-@media (max-width: 400px) {
-    body {
-        background-color: red;
+@media (max-width: 768px) {
+    #navbar {
+        display: none; /* Oculta el navbar en pantallas pequeñas */
     }
+    
+    #main-doc {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    #header-navbar {
+        width: 100%;
+        font-size: 3vw;
+    }
+    
+    .main-section {
+        margin: 10px;
+    }
+}
+
+/*Modo oscuro*/
+
+body.dark-mode {
+    background-color: #212529;
+}
+
+body.dark-mode #navbar {
+    border-color: #dee2e6;
+    color: #dee2e6;
+}
+
+body.dark-mode #navbar header {
+    border-color: #dee2e6;
+    color: #dee2e6;
+}
+
+body.dark-mode #navbar a {
+    border-color: #dee2e6;
+    color: #dee2e6;
+}
+
+body.dark-mode #header-navbar {
+    background-color: #6c757d;
+    color: #e9ecef;
+}
+
+body.dark-mode .main-section {
+    background-color: #212529;
+    color: #ced4da;
+}
+
+body.dark-mode .main-section a {
+    color: #6c757d;
+}
+
+body.dark-mode .code_pre {
+    background-color: #6c757d;
+    border-color: #f8f9fa;
+    color: #e9ecef;
+}
+
+body.dark-mode section:last-of-type article {
+    background-color: #495057;
+}
+
+body.dark-mode section:last-of-type table {
+    background-color: #6c757d;
+}
+
+body.dark-mode section:last-of-type dl {
+    background-color: #6c757d;
 }
 
 /*
@@ -313,8 +380,3 @@ adb5bd
 343a40
 212529
 */
-
-/**/
-
-
-/**/
