@@ -66,6 +66,62 @@
                     <li>Distribución: Cada copia del repositorio contiene todo el historial del proyecto, no depende de un servidor central.</li>
                     <li>Flexibilidad: Funciona para proyectos de cualquier tamaño y complejidad.</li>
                 </ol>
+                <h3>Instalación de Git</h3>
+                <p>Para comenzar a usar Git, primero necesitas instalarlo en tu ordenador. Veamos como hacerlo dependiendo de tu sistema operativo.</p>
+                <ol>
+                    <li>
+                        <h4>Windows</h4>
+                        <ul>
+                            <li>Descarga el instalador desde https://git-scm.com.</li>
+                            <li>Ejecuta el archivo descargado y sigue las instrucciones del asistente.</li>
+                            <li>Durante la instalación, se te pedirá que elijas configuraciones como el editor predeterminado. Puedes mantener las opciones recomendadas.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>MacOS</h4>
+                        <ul>
+                            <li>Si tienes Homebrew instalado, puedes instalar Git con:</li>
+                            <code>brew install git</code>
+                            <li>También puedes descargarlo directamente desde https://git-scm.com.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Linux</h4>
+                        <p>Usa el gestor de paquetes de tu distribución para instalar Git. Algunos ejemplos:</p>
+                        <ul>
+                            <li>Ubuntu/Debian:</li>
+                            <code>sudo apt-get install git</code>
+                            <li>CentOS/Fedora:</li>
+                            <code>sudo yum install git</code>
+                        </ul>
+                        <p>Para verificar que Git está instalado correctamente, ejecuta:</p>
+                        <code>git --version</code>
+                    </li>
+                </ol>
+                <h3>Configuración inicial de Git</h3>
+                <p>Una vez instalado, es importante realizar una configuración inicial para personalizar Git según tu identidad y preferencias.</p>
+                <ol>
+                    <li>
+                        <h4>Configuración de nombre de usuario y correo electrónico</h4>
+                        <p>Estos valores se usarán para identificarte en los commits que realices.</p>
+                        <ul>
+                            <li>
+                                <p>Configura tu nombre:</p>
+                                <code>git config --global user.name "TuNombre"</code>
+                            </li>
+                            <li>
+                                <p>Configura tu correo electrónico:</p>
+                                <code>git config --global user.email "TuCorreo@example.com"</code>
+                            </li>
+                            <p>Para verificar tu configuración, utiliza:</p>
+                            <code>git config --global --list</code>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Configuración de editor predeterminado</h4>
+                        <p>Git utiliza un editor de texto para tareas como escribir mensajes de commit largos. Por defecto, suele usar <code>vim</code>, pero puedes cambiarlo al que prefieras. Por ejemplo:</p>
+                    </li>
+                </ol>
 
             </article>
         </section>

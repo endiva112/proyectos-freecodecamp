@@ -23,7 +23,10 @@ body {
     width: 15%;
     height: 100vh;
     border-right: 3px solid #6c757d;
-
+    
+    /*Evitar poder seleccionar componentes*/
+    user-select: none;
+    
     /*Posicionar contenido contenedor*/
     box-sizing: border-box; 
     display: flex;
@@ -37,7 +40,7 @@ body {
     padding: 10px 20px 0 0;
     box-sizing: border-box;
     height: 60px;
-
+    
     text-align: right;
     font-size: 2em;
     font-style: italic;
@@ -46,7 +49,7 @@ body {
 .nav-link {
     padding: 0 0 14px 14px;
     border-bottom: 1px solid #343a40;
-
+    
     font-size: 0.85em;
     font-weight: 500;
     font-family: Helvetica;
@@ -59,10 +62,10 @@ body {
     height: 60px;
     box-sizing: border-box;
     padding: 0 30px;
-
+    
     /*Evitar poder seleccionar componentes*/
     user-select: none;
-
+    
     /*Posicionar contenido contenedor*/
     justify-content: space-between;
     align-items: center;
@@ -95,7 +98,7 @@ body {
     display: block;
     left: -6px;
     top: 100%;
-
+    
     /*Diseño*/
     box-shadow: inset -20px 0 20px -1px #ced4da, inset 2px 0 2px -1px #e9ecef;
     border-radius: 50% 50% 10px 10px;
@@ -177,7 +180,7 @@ adb5bd
     /*Posicionar contenedor*/
     margin-left: 15%;
     width: 85%;
-
+    
     /*Posicionar contenido contenedor*/
     display: flex;
     flex-direction: column;
@@ -185,7 +188,7 @@ adb5bd
 
 .main-section {
     background-color: cadetblue;
-
+    
     /*Posicionar contenido contenedor*/
     margin: 20px;
     padding: 20px;
@@ -221,11 +224,11 @@ footer a {
 footer a:visited {
     color: #1a535c;
 }
-  
+
 footer a:hover {
     color: #4ecdc4;
 }
-  
+
 footer a:active {
     color: #a8dadc;
 }
