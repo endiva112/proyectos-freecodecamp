@@ -60,13 +60,13 @@
                 <h3>Why use Git?</h3>
                 <p>Git has become the de facto standard in software development for the following reasons:</p>
                 <ol>
-                    <li>Efficient collaboration: Allows multiple developers to work simultaneously on different parts of a project.</li>
-                    <li>Complete history: Keeps all changes made, along with who made them and why.</li>
-                    <li>Security: Git data is hard to corrupt due to its design.</li>
-                    <li>Distribution: Each copy of the repository contains the full project history, so it doesn't rely on a central server.</li>
-                    <li>Flexibility: Works for projects of any size and complexity.</li>
+                    <li><b>Efficient collaboration</b>: Allows multiple developers to work simultaneously on different parts of a project.</li>
+                    <li><b>Complete history</b>: Keeps all changes made, along with who made them and why.</li>
+                    <li><b>Security</b>: Git data is hard to corrupt due to its design.</li>
+                    <li><b>Distribution</b>: Each copy of the repository contains the full project history, so it doesn't rely on a central server.</li>
+                    <li><b>Flexibility</b>: Works for projects of any size and complexity.</li>
                 </ol>
-                <h3>Installing Git</h3>
+                <h3 class="border">Installing Git</h3>
                 <p>To start using Git, you first need to install it on your computer. Let's see how to do it depending on your operating system.</p>
                 <ol>
                     <li>
@@ -81,7 +81,7 @@
                         <h4>MacOS</h4>
                         <ul>
                             <li>If you have Homebrew installed, you can install Git with:</li>
-                            <pre><code>brew install git</code></pre>
+                            <pre class="code_pre"><code>brew install git</code></pre>
                             <li>You can also download it directly from <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>.</li>
                         </ul>
                     </li>
@@ -90,12 +90,12 @@
                         <p>Use your distribution's package manager to install Git. Some examples:</p>
                         <ul>
                             <li>Ubuntu/Debian:</li>
-                            <pre><code>sudo apt-get install git</code></pre>
+                            <pre class="code_pre"><code>sudo apt-get install git</code></pre>
                             <li>CentOS/Fedora:</li>
-                            <pre><code>sudo yum install git</code></pre>
+                            <pre class="code_pre"><code>sudo yum install git</code></pre>
                         </ul>
                         <p>To verify that Git is installed correctly, run:</p>
-                        <pre><code>git --version</code></pre>
+                        <pre class="code_pre"><code>git --version</code></pre>
                     </li>
                 </ol>
                 <h3>Initial Git Setup</h3>
@@ -107,15 +107,15 @@
                         <ul>
                             <li>
                                 <p>Set your name:</p>
-                                <pre><code>git config --global user.name "YourName"</code></pre>
+                                <pre class="code_pre"><code>git config --global user.name "YourName"</code></pre>
                             </li>
                             <li>
                                 <p>Set your email:</p>
-                                <pre><code>git config --global user.email "YourEmail@example.com"</code></pre>
+                                <pre class="code_pre"><code>git config --global user.email "YourEmail@example.com"</code></pre>
                             </li>
                             <li>
                                 <p>To verify your configuration, use:</p>
-                                <pre><code>git config --global --list</code></pre>
+                                <pre class="code_pre"><code>git config --global --list</code></pre>
                             </li>
                         </ul>
                     </li>
@@ -124,9 +124,9 @@
                         <p>Git uses a text editor for tasks such as writing long commit messages. By default, it uses <code>vim</code>, but you can change it to any editor you prefer. For example:</p>
                         <ul>
                             <li>To set Visual Studio Code as the default editor:</li>
-                            <pre><code>git config --global core.editor "code --wait"</code></pre>
+                            <pre class="code_pre"><code>git config --global core.editor "code --wait"</code></pre>
                             <li>To set Nano as the default editor:</li>
-                            <pre><code>git config --global core.editor "nano"</code></pre>
+                            <pre class="code_pre"><code>git config --global core.editor "nano"</code></pre>
                         </ul>
                     </li>
                 </ol>
@@ -140,14 +140,14 @@
                 
                 <h4>Create a repository</h4>
                 <p>To create a local repository, use the command:</p>
-                <pre><code>git init</code></pre>
+                <pre class="code_pre"><code>git init</code></pre>
                 <p>This command initializes a new empty repository in the current directory.</p>
                 
                 <h4>Clone a repository</h4>
                 <p>To get a copy of a remote repository on your local machine, use:</p>
-                <pre><code>git clone REPOSITORY_URL</code></pre>
+                <pre class="code_pre"><code>git clone REPOSITORY_URL</code></pre>
                 <p>For example:</p>
-                <pre><code>git clone https://github.com/user/repository.git</code></pre>
+                <pre class="code_pre"><code>git clone https://github.com/user/repository.git</code></pre>
                 <p>This will download all the files and history from the remote repository.</p>
                 
                 <h3>Branches</h3>
@@ -155,17 +155,17 @@
                 
                 <h4>Create a branch</h4>
                 <p>To create a new branch, use:</p>
-                <pre><code>git branch branch_name</code></pre>
+                <pre class="code_pre"><code>git branch branch_name</code></pre>
                 <p>For example, to create a branch named <code>new-feature</code>:</p>
-                <pre><code>git branch new-feature</code></pre>
+                <pre class="code_pre"><code>git branch new-feature</code></pre>
                 
                 <h4>Switch branches</h4>
                 <p>To switch to an existing branch, use:</p>
-                <pre><code>git checkout branch_name</code></pre>
+                <pre class="code_pre"><code>git checkout branch_name</code></pre>
                 <p>For example:</p>
-                <pre><code>git checkout new-feature</code></pre>
+                <pre class="code_pre"><code>git checkout new-feature</code></pre>
                 <p>You can also create a new branch and switch to it immediately with:</p>
-                <pre><code>git checkout -b branch_name</code></pre>
+                <pre class="code_pre"><code>git checkout -b branch_name</code></pre>
                 
                 <h4>Basic branch workflow</h4>
                 <p>A typical workflow with branches is:</p>
@@ -182,11 +182,11 @@
                 <p>After making changes to the files, use the following commands:</p>
                 <ol>
                     <li>Stage the files for commit:</li>
-                    <pre><code>git add file_or_folder</code></pre>
+                    <pre class="code_pre"><code>git add file_or_folder</code></pre>
                     <p>To stage all files, use:</p>
-                    <pre><code>git add .</code></pre>
+                    <pre class="code_pre"><code>git add .</code></pre>
                     <li>Create the commit with a descriptive message:</li>
-                    <pre><code>git commit -m "Message describing the changes"</code></pre>
+                    <pre class="code_pre"><code>git commit -m "Message describing the changes"</code></pre>
                 </ol>
                 
                 <h4>Effective commit messages</h4>
@@ -199,10 +199,10 @@
                 
                 <h4>View commit history</h4>
                 <p>To view the commit history of a repository, use:</p>
-                <pre><code>git log</code></pre>
+                <pre class="code_pre"><code>git log</code></pre>
                 <p>This will show detailed information about each commit, such as its author, date, and message.</p>
                 <p>For a more compact history, use:</p>
-                <pre><code>git log --oneline</code></pre>
+                <pre class="code_pre"><code>git log --oneline</code></pre>
             </article>
         </section>
         <section class="main-section" id="Teamwork_with_Git">
@@ -213,11 +213,11 @@
                 
                 <h4>Add a remote</h4>
                 <p>To link your local repository with a remote repository, use:</p>
-                <pre><code>git remote add origin REPOSITORY_URL</code></pre>
+                <pre class="code_pre"><code>git remote add origin REPOSITORY_URL</code></pre>
                 <p>For example:</p>
-                <pre><code>git remote add origin https://github.com/user/repository.git</code></pre>
+                <pre class="code_pre"><code>git remote add origin https://github.com/user/repository.git</code></pre>
                 <p>To check the configured remotes, use:</p>
-                <pre><code>git remote -v</code></pre>
+                <pre class="code_pre"><code>git remote -v</code></pre>
                 
                 <h4>Fetch changes from remote (pull and fetch)</h4>
                 <p>To get the latest changes from the remote to your local repository, you can use:</p>
@@ -226,15 +226,15 @@
                     <li><strong>git pull:</strong> Gets the remote changes and automatically merges them with your current branch.</li>
                 </ul>
                 <p>Command to make a pull:</p>
-                <pre><code>git pull origin branch</code></pre>
+                <pre class="code_pre"><code>git pull origin branch</code></pre>
                 <p>For example:</p>
-                <pre><code>git pull origin main</code></pre>
+                <pre class="code_pre"><code>git pull origin main</code></pre>
                 
                 <h4>Push changes to remote</h4>
                 <p>To send changes from your local repository to the remote, use:</p>
-                <pre><code>git push origin branch</code></pre>
+                <pre class="code_pre"><code>git push origin branch</code></pre>
                 <p>For example, to push changes to the <code>main</code> branch:</p>
-                <pre><code>git push origin main</code></pre>
+                <pre class="code_pre"><code>git push origin main</code></pre>
                 
                 <h3>Conflict resolution</h3>
                 <h4>What are conflicts?</h4>
@@ -245,9 +245,9 @@
                     <li>When a conflict occurs, Git will mark the conflicting areas in the affected files.</li>
                     <li>Edit the file to choose which changes to keep.</li>
                     <li>Save the file and mark the conflict as resolved with:</li>
-                    <pre><code>git add affected_file</code></pre>
+                    <pre class="code_pre"><code>git add affected_file</code></pre>
                     <li>Complete the merge with:</li>
-                    <pre><code>git commit</code></pre>
+                    <pre class="code_pre"><code>git commit</code></pre>
                 </ol>
                 <p>To avoid conflicts:</p>
                 <ul>
@@ -280,14 +280,14 @@
                 <h4>What is a rebase?</h4>
                 <p>Rebase is an alternative to <code>merge</code> that rewrites the commit history to apply changes from one branch onto another as if they had been made sequentially. This results in a more linear and readable history.</p>
                 <p>Basic command:</p>
-                <pre><code>git rebase base_branch</code></pre>
+                <pre class="code_pre"><code>git rebase base_branch</code></pre>
                 <p>For example, to apply the changes from your current branch onto the <code>main</code> branch:</p>
-                <pre><code>git rebase main</code></pre>
+                <pre class="code_pre"><code>git rebase main</code></pre>
             
                 <h4>Interactive rebase</h4>
                 <p>Interactive rebase allows you to modify, combine, or delete commits during the rebase process. It's useful for cleaning up history before pushing changes.</p>
                 <p>Command to start an interactive rebase:</p>
-                <pre><code>git rebase -i HEAD~n</code></pre>
+                <pre class="code_pre"><code>git rebase -i HEAD~n</code></pre>
                 <p>Where <code>n</code> is the number of recent commits you want to modify.</p>
                 <p>During the process, you can perform actions like:</p>
                 <ul>
@@ -302,27 +302,27 @@
                 <h4>Temporarily save changes</h4>
                 <p>The <code>git stash</code> command temporarily saves your current changes so that you can switch branches or perform other actions without losing your uncommitted work.</p>
                 <p>Command to save changes:</p>
-                <pre><code>git stash</code></pre>
+                <pre class="code_pre"><code>git stash</code></pre>
                 <p>To add a description to the stash:</p>
-                <pre><code>git stash save "Description"</code></pre>
+                <pre class="code_pre"><code>git stash save "Description"</code></pre>
             
                 <h4>Retrieve saved changes</h4>
                 <p>To retrieve the most recently saved changes:</p>
-                <pre><code>git stash apply</code></pre>
+                <pre class="code_pre"><code>git stash apply</code></pre>
                 <p>To retrieve and remove the stash from the list:</p>
-                <pre><code>git stash pop</code></pre>
+                <pre class="code_pre"><code>git stash pop</code></pre>
                 <p>To list all saved stashes:</p>
-                <pre><code>git stash list</code></pre>
+                <pre class="code_pre"><code>git stash list</code></pre>
             
                 <h3>Cherry-picking</h3>
                 <h4>Apply specific commits to another branch</h4>
                 <p>Cherry-picking allows you to apply a specific commit from one branch to another without performing a full merge.</p>
                 <p>Basic command:</p>
-                <pre><code>git cherry-pick COMMIT_ID</code></pre>
+                <pre class="code_pre"><code>git cherry-pick COMMIT_ID</code></pre>
                 <p>To get the commit ID, you can use:</p>
-                <pre><code>git log</code></pre>
+                <pre class="code_pre"><code>git log</code></pre>
                 <p>Example:</p>
-                <pre><code>git cherry-pick a1b2c3d4</code></pre>
+                <pre class="code_pre"><code>git cherry-pick a1b2c3d4</code></pre>
             
                 <h3>Git hooks</h3>
                 <p><strong>Git hooks</strong> are scripts that run automatically before or after key events such as commits, merges, or pushes. They are useful for automating tasks like checking code or deploying applications.</p>
@@ -335,9 +335,9 @@
                     <li><code>post-merge:</code> Runs after a merge. It can be useful for updating dependencies.</li>
                 </ul>
                 <p>To enable a hook, create or edit the corresponding file, for example:</p>
-                <pre><code>nano .git/hooks/pre-commit</code></pre>
+                <pre class="code_pre"><code>nano .git/hooks/pre-commit</code></pre>
                 <p>Make sure the file is executable:</p>
-                <pre><code>chmod +x .git/hooks/pre-commit</code></pre>
+                <pre class="code_pre"><code>chmod +x .git/hooks/pre-commit</code></pre>
             </article>
         </section>
         <section class="main-section" id="Error_Management">
@@ -348,23 +348,23 @@
                 
                 <h4>Undo changes in files not added to the staging area</h4>
                 <p>If you modified a file but haven't used <code>git add</code> yet, you can revert it to its last committed version with:</p>
-                <pre><code>git checkout -- FILE_NAME</code></pre>
+                <pre class="code_pre"><code>git checkout -- FILE_NAME</code></pre>
                 <p>For example:</p>
-                <pre><code>git checkout -- index.html</code></pre>
+                <pre class="code_pre"><code>git checkout -- index.html</code></pre>
             
                 <h4>Remove files added to the staging area</h4>
                 <p>If you added a file with <code>git add</code> but don't want to include it in the next commit:</p>
-                <pre><code>git reset FILE_NAME</code></pre>
+                <pre class="code_pre"><code>git reset FILE_NAME</code></pre>
                 <p>Example:</p>
-                <pre><code>git reset index.html</code></pre>
+                <pre class="code_pre"><code>git reset index.html</code></pre>
             
                 <h3>Revert a Commit</h3>
                 <p>If you've already committed changes but want to revert them, you can create a new commit that undoes the changes made:</p>
-                <pre><code>git revert COMMIT_ID</code></pre>
+                <pre class="code_pre"><code>git revert COMMIT_ID</code></pre>
                 <p>You can get the <code>COMMIT_ID</code> using the command:</p>
-                <pre><code>git log</code></pre>
+                <pre class="code_pre"><code>git log</code></pre>
                 <p>For example:</p>
-                <pre><code>git revert a1b2c3d4</code></pre>
+                <pre class="code_pre"><code>git revert a1b2c3d4</code></pre>
                 <p>This will open an editor to confirm the new commit that undoes the changes of the previous one.</p>
             
                 <h3>Reset to the Previous State</h3>
@@ -372,25 +372,25 @@
             
                 <h4>Reset to the Last Committed State</h4>
                 <p>To undo all changes since the last commit:</p>
-                <pre><code>git reset --hard</code></pre>
+                <pre class="code_pre"><code>git reset --hard</code></pre>
                 <p>Note: This will delete any uncommitted changes.</p>
             
                 <h4>Reset to a Specific Commit</h4>
                 <p>To go back to a previous state in history:</p>
-                <pre><code>git reset --hard COMMIT_ID</code></pre>
+                <pre class="code_pre"><code>git reset --hard COMMIT_ID</code></pre>
                 <p>Example:</p>
-                <pre><code>git reset --hard a1b2c3d4</code></pre>
+                <pre class="code_pre"><code>git reset --hard a1b2c3d4</code></pre>
                 <p>Warning: This will rewrite the history, so use it carefully, especially if you've already shared commits with others.</p>
             
                 <h3>Recover Deleted Files</h3>
                 <p>If you accidentally deleted a file but haven't committed the change yet, you can recover it:</p>
-                <pre><code>git checkout -- FILE_NAME</code></pre>
+                <pre class="code_pre"><code>git checkout -- FILE_NAME</code></pre>
                 <p>For example:</p>
-                <pre><code>git checkout -- styles.css</code></pre>
+                <pre class="code_pre"><code>git checkout -- styles.css</code></pre>
                 <p>If you've already committed the deletion but want to recover the file, use:</p>
-                <pre><code>git checkout COMMIT_ID -- FILE_NAME</code></pre>
+                <pre class="code_pre"><code>git checkout COMMIT_ID -- FILE_NAME</code></pre>
                 <p>For example:</p>
-                <pre><code>git checkout a1b2c3d4 -- styles.css</code></pre>
+                <pre class="code_pre"><code>git checkout a1b2c3d4 -- styles.css</code></pre>
                 <p>This will restore the file from the specified commit.</p>
             </article>
         </section>
@@ -404,19 +404,19 @@
             
                 <h4>Adding and Managing Submodules</h4>
                 <p>To add a submodule, use the command:</p>
-                <pre><code>git submodule add REPOSITORY_URL DESTINATION_PATH</code></pre>
+                <pre class="code_pre"><code>git submodule add REPOSITORY_URL DESTINATION_PATH</code></pre>
                 <p>Example:</p>
-                <pre><code>git submodule add https://github.com/user/library.git libs/library</code></pre>
+                <pre class="code_pre"><code>git submodule add https://github.com/user/library.git libs/library</code></pre>
                 <p>To initialize and clone all submodules in a repository:</p>
-                <pre><code>git submodule update --init --recursive</code></pre>
+                <pre class="code_pre"><code>git submodule update --init --recursive</code></pre>
                 <p>If you want to update a submodule to its latest version:</p>
-                <pre><code>git submodule update --remote</code></pre>
+                <pre class="code_pre"><code>git submodule update --remote</code></pre>
             
                 <h3>Git and CI/CD Services</h3>
                 <h4>Continuous Integration</h4>
                 <p>Continuous integration (CI) is a practice where every change in the code is automatically tested for issues. With Git, you can easily integrate it with CI services such as GitHub Actions, Travis CI, or GitLab CI.</p>
                 <p>An example configuration in GitHub Actions would be to create a <code>.github/workflows/ci.yml</code> file:</p>
-                <pre><code>name: CI
+                <pre class="code_pre"><code>name: CI
                 on:
                   push:
                     branches:
@@ -438,7 +438,7 @@
                     <li><strong>GitLab CI/CD:</strong> Set up a <code>.gitlab-ci.yml</code> file to define testing and deployment stages.</li>
                 </ul>
                 <p>For example, for deploying to Heroku:</p>
-                <pre><code>deploy:
+                <pre class="code_pre"><code>deploy:
                   provider: heroku
                   api_key: $HEROKU_API_KEY
                   app: your-app-name</code></pre>

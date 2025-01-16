@@ -81,7 +81,7 @@
                         <h4>MacOS</h4>
                         <ul>
                             <li>Si tienes Homebrew instalado, puedes instalar Git con:</li>
-                            <pre><code>brew install git</code></pre>
+                            <pre class="code_pre"><code>brew install git</code></pre>
                             <li>También puedes descargarlo directamente desde <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>.</li>
                         </ul>
                     </li>
@@ -90,12 +90,12 @@
                         <p>Usa el gestor de paquetes de tu distribución para instalar Git. Algunos ejemplos:</p>
                         <ul>
                             <li>Ubuntu/Debian:</li>
-                            <pre><code>sudo apt-get install git</code></pre>
+                            <pre class="code_pre"><code>sudo apt-get install git</code></pre>
                             <li>CentOS/Fedora:</li>
-                            <pre><code>sudo yum install git</code></pre>
+                            <pre class="code_pre"><code>sudo yum install git</code></pre>
                         </ul>
                         <p>Para verificar que Git está instalado correctamente, ejecuta:</p>
-                        <pre><code>git --version</code></pre>
+                        <pre class="code_pre"><code>git --version</code></pre>
                     </li>
                 </ol>
                 <h3>Configuración inicial de Git</h3>
@@ -107,15 +107,15 @@
                         <ul>
                             <li>
                                 <p>Configura tu nombre:</p>
-                                <pre><code>git config --global user.name "TuNombre"</code></pre>
+                                <pre class="code_pre"><code>git config --global user.name "TuNombre"</code></pre>
                             </li>
                             <li>
                                 <p>Configura tu correo electrónico:</p>
-                                <pre><code>git config --global user.email "TuCorreo@example.com"</code></pre>
+                                <pre class="code_pre"><code>git config --global user.email "TuCorreo@example.com"</code></pre>
                             </li>
                             <li>
                                 <p>Para verificar tu configuración, utiliza:</p>
-                                <pre><code>git config --global --list</code></pre>
+                                <pre class="code_pre"><code>git config --global --list</code></pre>
                             </li>
                         </ul>
                     </li>
@@ -124,9 +124,9 @@
                         <p>Git utiliza un editor de texto para tareas como escribir mensajes de commit largos. Por defecto, suele usar <code>vim</code>, pero puedes cambiarlo al que prefieras. Por ejemplo:</p>
                         <ul>
                             <li>Para configurar Visual Studio Code como editor predeterminado:</li>
-                            <pre><code>git config --global core.editor "code --wait"</code></pre>
+                            <pre class="code_pre"><code>git config --global core.editor "code --wait"</code></pre>
                             <li>Para configurar Nano como editor predeterminado:</li>
-                            <pre><code>git config --global core.editor "nano"</code></pre>
+                            <pre class="code_pre"><code>git config --global core.editor "nano"</code></pre>
                         </ul>
                     </li>
                 </ol>
@@ -140,14 +140,14 @@
                 
                 <h4>Crear un repositorio</h4>
                 <p>Para crear un repositorio local, usa el comando:</p>
-                <pre><code>git init</code></pre>
+                <pre class="code_pre"><code>git init</code></pre>
                 <p>Este comando inicializa un nuevo repositorio vacío en el directorio actual.</p>
                 
                 <h4>Clonar un repositorio</h4>
                 <p>Para obtener una copia de un repositorio remoto en tu máquina local, usa:</p>
-                <pre><code>git clone URL_DEL_REPOSITORIO</code></pre>
+                <pre class="code_pre"><code>git clone URL_DEL_REPOSITORIO</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
+                <pre class="code_pre"><code>git clone https://github.com/usuario/repositorio.git</code></pre>
                 <p>Esto descargará todos los archivos y el historial del repositorio remoto.</p>
                 
                 <h3>Ramas</h3>
@@ -155,17 +155,17 @@
                 
                 <h4>Crear una rama</h4>
                 <p>Para crear una nueva rama, usa:</p>
-                <pre><code>git branch nombre_de_la_rama</code></pre>
+                <pre class="code_pre"><code>git branch nombre_de_la_rama</code></pre>
                 <p>Por ejemplo, para crear una rama llamada <code>nueva-funcionalidad</code>:</p>
-                <pre><code>git branch nueva-funcionalidad</code></pre>
+                <pre class="code_pre"><code>git branch nueva-funcionalidad</code></pre>
                 
                 <h4>Cambiar de rama</h4>
                 <p>Para cambiar a una rama existente, usa:</p>
-                <pre><code>git checkout nombre_de_la_rama</code></pre>
+                <pre class="code_pre"><code>git checkout nombre_de_la_rama</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git checkout nueva-funcionalidad</code></pre>
+                <pre class="code_pre"><code>git checkout nueva-funcionalidad</code></pre>
                 <p>También puedes crear una nueva rama y cambiar a ella de inmediato con:</p>
-                <pre><code>git checkout -b nombre_de_la_rama</code></pre>
+                <pre class="code_pre"><code>git checkout -b nombre_de_la_rama</code></pre>
                 
                 <h4>El flujo de trabajo básico con ramas</h4>
                 <p>Un flujo de trabajo típico con ramas es:</p>
@@ -182,11 +182,11 @@
                 <p>Después de realizar cambios en los archivos, usa los siguientes comandos:</p>
                 <ol>
                     <li>Añade los archivos al área de preparación:</li>
-                    <pre><code>git add archivo_o_carpeta</code></pre>
+                    <pre class="code_pre"><code>git add archivo_o_carpeta</code></pre>
                     <p>Para añadir todos los archivos, usa:</p>
-                    <pre><code>git add .</code></pre>
+                    <pre class="code_pre"><code>git add .</code></pre>
                     <li>Crea el commit con un mensaje descriptivo:</li>
-                    <pre><code>git commit -m "Mensaje que describe los cambios"</code></pre>
+                    <pre class="code_pre"><code>git commit -m "Mensaje que describe los cambios"</code></pre>
                 </ol>
                 
                 <h4>Mensajes de commit efectivos</h4>
@@ -199,10 +199,10 @@
                 
                 <h4>Visualizar historial de commits</h4>
                 <p>Para ver el historial de commits de un repositorio, usa:</p>
-                <pre><code>git log</code></pre>
+                <pre class="code_pre"><code>git log</code></pre>
                 <p>Esto mostrará información detallada de cada commit, como su autor, fecha y mensaje.</p>
                 <p>Para un historial más compacto, usa:</p>
-                <pre><code>git log --oneline</code></pre>
+                <pre class="code_pre"><code>git log --oneline</code></pre>
             </article>
         </section>
         <section class="main-section" id="Trabajo_en_Equipo_con_Git">
@@ -213,11 +213,11 @@
                 
                 <h4>Añadir un remoto</h4>
                 <p>Para vincular tu repositorio local con un repositorio remoto, usa:</p>
-                <pre><code>git remote add origin URL_DEL_REPOSITORIO</code></pre>
+                <pre class="code_pre"><code>git remote add origin URL_DEL_REPOSITORIO</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
+                <pre class="code_pre"><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
                 <p>Para verificar los remotos configurados, usa:</p>
-                <pre><code>git remote -v</code></pre>
+                <pre class="code_pre"><code>git remote -v</code></pre>
                 
                 <h4>Obtener cambios del remoto (pull y fetch)</h4>
                 <p>Para traer los cambios más recientes desde el remoto a tu repositorio local, puedes usar:</p>
@@ -226,15 +226,15 @@
                     <li><strong>git pull:</strong> Obtiene los cambios remotos y los combina automáticamente con tu rama actual.</li>
                 </ul>
                 <p>Comando para hacer un pull:</p>
-                <pre><code>git pull origin rama</code></pre>
+                <pre class="code_pre"><code>git pull origin rama</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git pull origin main</code></pre>
+                <pre class="code_pre"><code>git pull origin main</code></pre>
                 
                 <h4>Subir cambios al remoto (push)</h4>
                 <p>Para enviar los cambios desde tu repositorio local al remoto, usa:</p>
-                <pre><code>git push origin rama</code></pre>
+                <pre class="code_pre"><code>git push origin rama</code></pre>
                 <p>Por ejemplo, para subir los cambios a la rama <code>main</code>:</p>
-                <pre><code>git push origin main</code></pre>
+                <pre class="code_pre"><code>git push origin main</code></pre>
                 
                 <h3>Resolución de conflictos</h3>
                 <h4>¿Qué son los conflictos?</h4>
@@ -245,9 +245,9 @@
                     <li>Cuando ocurre un conflicto, Git marcará las áreas en conflicto en los archivos afectados.</li>
                     <li>Edita el archivo para seleccionar qué cambios mantener.</li>
                     <li>Guarda el archivo y marca el conflicto como resuelto con:</li>
-                    <pre><code>git add archivo_afectado</code></pre>
+                    <pre class="code_pre"><code>git add archivo_afectado</code></pre>
                     <li>Finaliza el merge con:</li>
-                    <pre><code>git commit</code></pre>
+                    <pre class="code_pre"><code>git commit</code></pre>
                 </ol>
                 <p>Para evitar conflictos:</p>
                 <ul>
@@ -280,14 +280,14 @@
                 <h4>¿Qué es un rebase?</h4>
                 <p>El rebase es una alternativa al <code>merge</code> que reescribe el historial de commits para aplicar los cambios de una rama sobre otra como si se hubieran realizado en secuencia. Esto da como resultado un historial más lineal y fácil de leer.</p>
                 <p>Comando básico:</p>
-                <pre><code>git rebase rama_base</code></pre>
+                <pre class="code_pre"><code>git rebase rama_base</code></pre>
                 <p>Por ejemplo, para aplicar los cambios de tu rama actual sobre la rama <code>main</code>:</p>
-                <pre><code>git rebase main</code></pre>
+                <pre class="code_pre"><code>git rebase main</code></pre>
         
                 <h4>Rebase interactivo</h4>
                 <p>El rebase interactivo te permite modificar, combinar o eliminar commits durante el proceso de rebase. Es útil para limpiar el historial antes de subir los cambios.</p>
                 <p>Comando para iniciar un rebase interactivo:</p>
-                <pre><code>git rebase -i HEAD~n</code></pre>
+                <pre class="code_pre"><code>git rebase -i HEAD~n</code></pre>
                 <p>Donde <code>n</code> es el número de commits recientes que quieres modificar.</p>
                 <p>Durante el proceso, puedes realizar acciones como:</p>
                 <ul>
@@ -302,27 +302,27 @@
                 <h4>Guardar cambios temporalmente</h4>
                 <p>El comando <code>git stash</code> guarda tus cambios actuales de forma temporal para que puedas cambiar de rama o realizar otras acciones sin perder tu trabajo no comprometido.</p>
                 <p>Comando para guardar cambios:</p>
-                <pre><code>git stash</code></pre>
+                <pre class="code_pre"><code>git stash</code></pre>
                 <p>Para agregar una descripción al stash:</p>
-                <pre><code>git stash save "Descripción"</code></pre>
+                <pre class="code_pre"><code>git stash save "Descripción"</code></pre>
         
                 <h4>Recuperar cambios guardados</h4>
                 <p>Para recuperar los cambios guardados más recientemente:</p>
-                <pre><code>git stash apply</code></pre>
+                <pre class="code_pre"><code>git stash apply</code></pre>
                 <p>Para recuperar y eliminar el stash de la lista:</p>
-                <pre><code>git stash pop</code></pre>
+                <pre class="code_pre"><code>git stash pop</code></pre>
                 <p>Para listar todos los stashes guardados:</p>
-                <pre><code>git stash list</code></pre>
+                <pre class="code_pre"><code>git stash list</code></pre>
         
                 <h3>Cherry-picking</h3>
                 <h4>Aplicar commits específicos a otra rama</h4>
                 <p>El cherry-picking permite aplicar un commit específico de una rama a otra, sin realizar un merge completo.</p>
                 <p>Comando básico:</p>
-                <pre><code>git cherry-pick ID_DEL_COMMIT</code></pre>
+                <pre class="code_pre"><code>git cherry-pick ID_DEL_COMMIT</code></pre>
                 <p>Para obtener el ID del commit, puedes usar:</p>
-                <pre><code>git log</code></pre>
+                <pre class="code_pre"><code>git log</code></pre>
                 <p>Ejemplo:</p>
-                <pre><code>git cherry-pick a1b2c3d4</code></pre>
+                <pre class="code_pre"><code>git cherry-pick a1b2c3d4</code></pre>
         
                 <h3>Git hooks</h3>
                 <p>Los <strong>hooks de Git</strong> son scripts que se ejecutan automáticamente antes o después de eventos clave, como commits, merges o pushes. Son útiles para automatizar tareas como verificar el código o desplegar aplicaciones.</p>
@@ -335,9 +335,9 @@
                     <li><code>post-merge:</code> Se ejecuta después de un merge. Puede ser útil para actualizar dependencias.</li>
                 </ul>
                 <p>Para habilitar un hook, crea o edita el archivo correspondiente, por ejemplo:</p>
-                <pre><code>nano .git/hooks/pre-commit</code></pre>
+                <pre class="code_pre"><code>nano .git/hooks/pre-commit</code></pre>
                 <p>Asegúrate de que el archivo sea ejecutable:</p>
-                <pre><code>chmod +x .git/hooks/pre-commit</code></pre>
+                <pre class="code_pre"><code>chmod +x .git/hooks/pre-commit</code></pre>
             </article>
         </section>
         <section class="main-section" id="Gestion_de_Errores">
@@ -347,48 +347,48 @@
                 <p>En Git, es común cometer errores o necesitar deshacer ciertos cambios. Dependiendo de la situación, puedes usar diferentes comandos:</p>
                 <h4>Deshacer cambios en archivos no añadidos al área de preparación</h4>
                 <p>Si modificaste un archivo pero aún no usaste <code>git add</code>, puedes revertirlo a su última versión confirmada con:</p>
-                <pre><code>git checkout -- NOMBRE_ARCHIVO</code></pre>
+                <pre class="code_pre"><code>git checkout -- NOMBRE_ARCHIVO</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git checkout -- index.html</code></pre>
+                <pre class="code_pre"><code>git checkout -- index.html</code></pre>
         
                 <h4>Eliminar archivos añadidos al área de preparación</h4>
                 <p>Si añadiste un archivo con <code>git add</code> pero no quieres incluirlo en el próximo commit:</p>
-                <pre><code>git reset NOMBRE_ARCHIVO</code></pre>
+                <pre class="code_pre"><code>git reset NOMBRE_ARCHIVO</code></pre>
                 <p>Ejemplo:</p>
-                <pre><code>git reset index.html</code></pre>
+                <pre class="code_pre"><code>git reset index.html</code></pre>
         
                 <h3>Revertir un commit</h3>
                 <p>Si ya realizaste un commit pero deseas revertirlo, puedes crear un nuevo commit que deshaga los cambios realizados:</p>
-                <pre><code>git revert ID_DEL_COMMIT</code></pre>
+                <pre class="code_pre"><code>git revert ID_DEL_COMMIT</code></pre>
                 <p>El <code>ID_DEL_COMMIT</code> puede obtenerse con el comando:</p>
-                <pre><code>git log</code></pre>
+                <pre class="code_pre"><code>git log</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git revert a1b2c3d4</code></pre>
+                <pre class="code_pre"><code>git revert a1b2c3d4</code></pre>
                 <p>Esto abrirá un editor para confirmar el nuevo commit que deshace los cambios del anterior.</p>
         
                 <h3>Restablecer al estado anterior</h3>
                 <p>Si quieres deshacer cambios de forma más drástica y no necesitas conservar el historial, puedes usar <code>git reset</code>.</p>
                 <h4>Restablecer al último commit confirmado</h4>
                 <p>Para deshacer todos los cambios desde el último commit:</p>
-                <pre><code>git reset --hard</code></pre>
+                <pre class="code_pre"><code>git reset --hard</code></pre>
                 <p>Nota: Esto eliminará cualquier cambio no confirmado.</p>
         
                 <h4>Restablecer a un commit específico</h4>
                 <p>Para volver a un estado anterior en el historial:</p>
-                <pre><code>git reset --hard ID_DEL_COMMIT</code></pre>
+                <pre class="code_pre"><code>git reset --hard ID_DEL_COMMIT</code></pre>
                 <p>Ejemplo:</p>
-                <pre><code>git reset --hard a1b2c3d4</code></pre>
+                <pre class="code_pre"><code>git reset --hard a1b2c3d4</code></pre>
                 <p>Advertencia: Esto reescribirá el historial, así que úsalo con precaución, especialmente si ya compartiste los commits con otros.</p>
         
                 <h3>Recuperar archivos eliminados</h3>
                 <p>Si eliminaste un archivo accidentalmente pero aún no confirmaste el cambio, puedes recuperarlo:</p>
-                <pre><code>git checkout -- NOMBRE_ARCHIVO</code></pre>
+                <pre class="code_pre"><code>git checkout -- NOMBRE_ARCHIVO</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git checkout -- styles.css</code></pre>
+                <pre class="code_pre"><code>git checkout -- styles.css</code></pre>
                 <p>Si ya confirmaste la eliminación pero deseas recuperarlo, utiliza:</p>
-                <pre><code>git checkout ID_DEL_COMMIT -- NOMBRE_ARCHIVO</code></pre>
+                <pre class="code_pre"><code>git checkout ID_DEL_COMMIT -- NOMBRE_ARCHIVO</code></pre>
                 <p>Por ejemplo:</p>
-                <pre><code>git checkout a1b2c3d4 -- styles.css</code></pre>
+                <pre class="code_pre"><code>git checkout a1b2c3d4 -- styles.css</code></pre>
                 <p>Esto restaurará el archivo desde el commit especificado.</p>
             </article>
         </section>
@@ -402,19 +402,19 @@
         
                 <h4>Añadir y gestionar submódulos</h4>
                 <p>Para añadir un submódulo, utiliza el comando:</p>
-                <pre><code>git submodule add URL_DEL_REPOSITORIO RUTA_DESTINO</code></pre>
+                <pre class="code_pre"><code>git submodule add URL_DEL_REPOSITORIO RUTA_DESTINO</code></pre>
                 <p>Ejemplo:</p>
-                <pre><code>git submodule add https://github.com/usuario/biblioteca.git libs/biblioteca</code></pre>
+                <pre class="code_pre"><code>git submodule add https://github.com/usuario/biblioteca.git libs/biblioteca</code></pre>
                 <p>Para inicializar y clonar todos los submódulos en un repositorio:</p>
-                <pre><code>git submodule update --init --recursive</code></pre>
+                <pre class="code_pre"><code>git submodule update --init --recursive</code></pre>
                 <p>Si deseas actualizar un submódulo a su última versión:</p>
-                <pre><code>git submodule update --remote</code></pre>
+                <pre class="code_pre"><code>git submodule update --remote</code></pre>
         
                 <h3>Git y servicios de CI/CD</h3>
                 <h4>Integración continua</h4>
                 <p>La integración continua (CI) es una práctica en la que cada cambio en el código se prueba automáticamente para detectar problemas. Con Git, puedes integrarlo fácilmente con servicios de CI como GitHub Actions, Travis CI o GitLab CI.</p>
                 <p>Un ejemplo de configuración en GitHub Actions sería crear un archivo <code>.github/workflows/ci.yml</code>:</p>
-                <pre><code>name: CI
+                <pre class="code_pre"><code>name: CI
         on:
           push:
             branches:
@@ -436,7 +436,7 @@
                     <li><strong>GitLab CI/CD:</strong> Configura un <code>.gitlab-ci.yml</code> para definir etapas de prueba y despliegue.</li>
                 </ul>
                 <p>Por ejemplo, para un despliegue a Heroku:</p>
-                <pre><code>deploy:
+                <pre class="code_pre"><code>deploy:
           provider: heroku
           api_key: $HEROKU_API_KEY
           app: nombre-de-tu-app</code></pre>
