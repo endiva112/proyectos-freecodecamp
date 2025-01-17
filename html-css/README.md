@@ -46,10 +46,11 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >- En este proyecto, utilizo CSS y diseño responsivo para codificar un piano. También he aprendido más a cerca de "media queries" y pseudoselectores.
 
 >### [14. Technical Documentation Page( Proyecto personal )](14.technical-documentation-page(certified_project)):
->+ **Proyectos en desarrollo**
 >+ Este proyecto es mi solución personal a la prueba **evaluatoria**
 >- Se ha creado una página de documentación técnica que sirva como instrucción o referencia para un tema con los mínimos establecidos pero con temática y diseños libres.
+>+ **Este proyecto ha sido subido a github pages y tiene su [repositorio separado](https://github.com/endiva112/docugit), donde encontrarás una versión más actualizada de él.**
 
->### [15. WORK IN PROGRESS](./):
+>### [15. City Skyline](15.city-skyline):
 >+ **Proyectos en desarrollo**
+>- En este curso, he creado el perfil de una ciudad (skyline). El objetivo principal era aprender a cerca de la configuración de variables CSS y su reutilización.
 
