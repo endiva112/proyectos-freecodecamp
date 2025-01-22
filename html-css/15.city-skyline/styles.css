@@ -81,4 +81,12 @@ body {
 # Variable declarations begin with two dashes (-) and are given a name and a value like this: --variable-name: 
 
 # variables are often declared in the :root selector. This is the highest level selector in CSS; putting your variables there will make them usable everywhere
+
+#Gradients in CSS are a way to transition between colors across the distance of an element. They are applied to the background property and the syntax looks like this:
+
+Example Code
+gradient-type(
+  color1,
+  color2
+);
 */
