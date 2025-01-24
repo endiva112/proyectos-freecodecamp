@@ -3,14 +3,13 @@
   --building-color2: #66cc99;
   --building-color3: #cc6699;
   --building-color4: #538cc6;
-  --window-color1: black;
+  --window-color1: #bb99ff;
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
 }
 
 * {
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -40,6 +39,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.sky {
+  background: radial-gradient(
+      closest-corner circle at 15% 15%,
+      #ffcf33,
+      #ffcf33 20%,
+      #ffff66 21%,
+      #bbeeff 100%
+    );
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -144,9 +153,13 @@ body {
   width: 10%;
   height: 60%;
 }
+
 .fb1a {
   border-bottom: 7vh solid var(--building-color4);
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
 }
+
 .fb1b {
   width: 60%;
   height: 10%;
@@ -174,60 +187,159 @@ body {
 .fb2 {
   width: 10%;
   height: 40%;
+}
+
+.fb2a {
+  width: 100%;
+  border-bottom: 10vh solid var(--building-color3);
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+}
+
+.fb2b {
+  width: 100%;
+  height: 75%;
   background-color: var(--building-color3);
+}
+
+.fb2-window {
+  width: 22%;
+  height: 100%;
+  background-color: var(--window-color3);
 }
 
 .fb3 {
   width: 10%;
   height: 35%;
+}
+  
+.fb3a {
+  width: 80%;
+  height: 15%;
   background-color: var(--building-color1);
 }
   
+.fb3b {
+  width: 100%;
+  height: 35%;
+  background-color: var(--building-color1);
+}
+
+.fb3-window {
+  width: 25%;
+  height: 80%;
+  background-color: var(--window-color1);
+}
+
 .fb4 {
   width: 8%;
   height: 45%;
-  background-color: var(--building-color1);
   position: relative;
   left: 10%;
+}
+
+.fb4a {
+  border-top: 5vh solid transparent;
+  border-left: 8vw solid var(--building-color1);
+}
+
+.fb4b {
+  width: 100%;
+  height: 89%;
+  background-color: var(--building-color1);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fb4-window {
+  width: 30%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: var(--window-color1);
+  margin: 10%;
 }
 
 .fb5 {
   width: 10%;
   height: 33%;
-  background-color: var(--building-color2);
   position: relative;
   right: 10%;
+  background: repeating-linear-gradient(
+      var(--building-color2),
+      var(--building-color2) 5%,
+      transparent 5%,
+      transparent 10%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--building-color2),
+      var(--building-color2) 12%,
+      var(--window-color2) 12%,
+      var(--window-color2) 44%
+    );
 }
 
 .fb6 {
   width: 9%;
   height: 38%;
-  background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3) 10%,
+      transparent 10%,
+      transparent 30%
+    ),
+    repeating-linear-gradient(
+      var(--building-color3),
+      var(--building-color3) 10%,
+      var(--window-color3) 10%,
+      var(--window-color3) 30%
+    );
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+     --window-color1: #777;
+    --window-color2: #777;
+    --window-color3: #777;
+    --window-color4: #777;
+  }
+  .sky {
+    background: radial-gradient(
+        closest-corner circle at 15% 15%,
+        #ccc,
+        #ccc 20%,
+        #445 21%,
+        #223 100%
+      );
+  }
 }
 
 
-
-
 /*
-# Variable declarations begin with two dashes (-) and are given a name and a value like this: --variable-name: 
+# Las declaraciones de variables comienzan con dos guiones (-) y se les asigna un nombre y un valor, como este: --nombre-variable: 
 
-# variables are often declared in the :root selector. This is the highest level selector in CSS; putting your variables there will make them usable everywhere
+# Las variables suelen declararse en el selector :root. Este es el selector de nivel más alto en CSS; al colocar tus variables allí, serán utilizables en todas partes.
 
-#Gradients in CSS are a way to transition between colors across the distance of an element. They are applied to the background property and the syntax looks like this:
+# Los gradientes en CSS son una forma de hacer la transición entre colores a lo largo de la distancia de un elemento. Se aplican a la propiedad background y la sintaxis se ve así:
 
-Example Code
-gradient-type(
+Ejemplo de Código
+tipo-gradiente(
   color1,
   color2
 );
 
-#Gradient transitions often gradually change from one color to another. When a more abrupt change is required, the transition can be made with a hard stop like this:
+# Las transiciones en gradientes a menudo cambian gradualmente de un color a otro. Cuando se requiere un cambio más abrupto, la transición puede hacerse con un corte brusco, como este:
 
-Example Code
+Ejemplo de Código
 linear-gradient(
-  var(--first-color) 0%,
-  var(--first-color) 40%,
-  var(--second-color) 40%,
-  var(--second-color) 80%
+  var(--primer-color) 0%,
+  var(--primer-color) 40%,
+  var(--segundo-color) 40%,
+  var(--segundo-color) 80%
 );
 */
