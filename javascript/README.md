@@ -8,5 +8,7 @@ cómo trabajar con almacenamiento local y cómo obtener datos mediante una API.
 
 ## Proyectos
 
-- [Pyramid Generator](1.pyramid-generator): En este proyecto práctico, se hace uso de los conceptos fundamentales de programación en JavaScript para programar
- un "Gemerador de Piramides". Se trabaja con arrays, strings, funciones, loops e instrucciones if/else entre otras cosas.
+- [Pyramid Generator](1.pyramid-generator): En este proyecto práctico, se hace uso de los conceptos fundamentales de programación en JavaScript para programar un "Gemerador de Piramides". Se trabaja con arrays, strings, funciones, loops e instrucciones if/else entre otras cosas.
+
+- [Gradebook App](2.gradebook-app): En este miniproyecto, se repasan los conceptos básicos de JavaScript, como funciones, variables y condiciones entre otras cosas, creando una aplicación de registro de calificaciones. El ejercicio se centra el corregir un proyecto ya montado pero con código defectuoso paraaprender a resolver pequeños problemas y comprender mejor los conceptos básicos.
+>+ **Proyecto en desarrollo**
