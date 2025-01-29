@@ -51,6 +51,8 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >+ **Este proyecto ha sido subido a github pages y tiene su [repositorio separado](https://github.com/endiva112/docugit), donde encontrarás una versión más actualizada de él.**
 
 >### [15. City Skyline](15.city-skyline):
->+ **Proyectos en desarrollo**
 >- En este curso, he creado el perfil de una ciudad (skyline). El objetivo principal era aprender a cerca de la configuración de variables CSS y su reutilización.
 
+>### [16. Magazine](16.magazine):
+>+ **Proyectos en desarrollo**
+>- En este curso, he creado un artículo para una revista. Aprendiendo a usar CSS Grid, incluidos conceptos como grid rows y grid columns.
