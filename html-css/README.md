@@ -54,5 +54,9 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >- En este curso, he creado el perfil de una ciudad (skyline). El objetivo principal era aprender a cerca de la configuración de variables CSS y su reutilización.
 
 >### [16. Magazine](16.magazine):
->+ **Proyectos en desarrollo**
 >- En este curso, he creado un artículo para una revista. Aprendiendo a usar CSS Grid, incluidos conceptos como grid rows y grid columns.
+
+>### [17. Product Landing Page( Proyecto personal )](17.product-landing-page(certified_project)):
+>+ **Proyectos en desarrollo**
+>+ Este proyecto es mi solución personal a la prueba **evaluatoria**
+>- Este proyecto está recién empezado...
