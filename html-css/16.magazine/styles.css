@@ -193,5 +193,37 @@ hr {
 }
 
 /*
+El atributo de carga de un elemento img se puede configurar como lazy para indicarle al navegador que 
+no obtenga el recurso de imagen hasta que sea necesario (por ejemplo, cuando el usuario desplace la 
+imagen para verla). Como beneficio adicional, los elementos cargados de forma diferida no se cargarán 
+hasta que se carguen los elementos que no son lazy, lo que significa que los usuarios con conexiones a 
+Internet lentas pueden ver el contenido de su página sin tener que esperar a que se carguen las imágenes.
 
+El encabezado HTTP Referer contiene información sobre la dirección o URL de una página desde la que un 
+usuario podría estar visitando. Esta información se puede utilizar en análisis para rastrear cuántos 
+usuarios de su página visitan freecodecamp.org, por ejemplo. Configurar el atributo rel en noreferrer 
+omite esta información de la solicitud HTTP.
+
+Hacer uso de la función minmax permite que las columnas sean responsivas en cualquier dispositivo. 
+La función minmax toma dos argumentos, el primero es el valor mínimo y el segundo es el máximo. 
+Estos valores pueden ser una longitud, un porcentaje, fr o incluso una palabra clave como max-content.
+
+La propiedad object-fit le indica al navegador cómo posicionar el elemento dentro de su contenedor. 
+Por ejemplo, cover establecerá la imagen para que llene el contenedor, haciendo los recortes necesarios
+para evitar cambiar la relación de aspecto.
+
+La propiedad grid-auto-flow, toma row o column como primer valor, con un segundo valor opcional de dense.
+grid-auto-flow utiliza un algoritmo de colocación automática para ajustar el diseño de la cuadrícula. 
+Si se establece en column, se le indicará al algoritmo que cree nuevas columnas para el contenido según 
+sea necesario. El valor dense permite que el algoritmo retroceda y rellene los huecos en la cuadrícula con 
+elementos más pequeños, lo que puede hacer que los elementos aparezcan desordenados.
+
+La propiedad gap es una forma abreviada de establecer el valor de column-gap y row-gap al mismo tiempo. Si 
+se le proporciona un valor, establece el espacio entre columnas y filas en ese valor. Si se le proporcionan 
+dos valores, establece el espacio entre filas en el primer valor y el espacio entre columnas en el segundo.
+
+La propiedad place-items se puede utilizar para establecer los valores align-items y justify-items al mismo 
+tiempo. La propiedad place-items toma uno o dos valores. Si se proporciona un valor, se utiliza tanto para 
+las propiedades align-items como justify-items . Si se proporcionan dos valores, el primer valor se utiliza 
+para la propiedad align-items y el segundo valor se utiliza para la propiedad justify-items.
 */
