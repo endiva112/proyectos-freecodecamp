@@ -11,3 +11,10 @@ let h1 = document.querySelector("h1");
  your code runs before the browser has finished reading the HTML, and your document.querySelector() will not see the button - because the browser hasn't processed it yet.
 
 To fix this, move your script element out of the head element, and place it at the end of your body element (just before the closing </body> tag).
+
+You need to wrap the text Store in double quotes. Because your string is already wrapped in double quotes, you'll need to escape the quotes around Store. You can escape them with a backslash \. Here is an example:
+
+Example Code
+const escapedString = "Naomi likes to play \"Zelda\" sometimes.";
+Wrap the text Store in double quotes within your text.innerText line.
+
