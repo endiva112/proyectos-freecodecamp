@@ -18,3 +18,6 @@ Example Code
 const escapedString = "Naomi likes to play \"Zelda\" sometimes.";
 Wrap the text Store in double quotes within your text.innerText line.
 
+The Math object in JavaScript contains static properties and methods for mathematical constants and functions. One of those is Math.random(), 
+which generates a random number from 0 (inclusive) to 1 (exclusive). Another is Math.floor(), which rounds a given number down to the 
+nearest integer.
