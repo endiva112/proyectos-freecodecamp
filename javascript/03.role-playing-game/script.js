@@ -76,7 +76,6 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;"
   }
-
 ];
 
 // initialize buttons
@@ -92,7 +91,7 @@ function update(location) {
   button1.onclick = location["button functions"][0];
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
-  text.innerText = location.text;
+  text.innerHTML = location.text;
 }
 
 function goTown() {
@@ -180,7 +179,7 @@ function attack() {
   monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
   healthText.innerText = health;
   monsterHealthText.innerText = monsterHealth;
-   if (health <= 0) {
+  if (health <= 0) {
     lose();
   } else if (monsterHealth <= 0) {
     if (fighting === 2) {
@@ -205,6 +204,10 @@ function defeatMonster() {
 
 function lose() {
   update(locations[5]);
+}
+
+function winGame() {
+  update(locations[6]);
 }
 
 function restart() {
