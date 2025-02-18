@@ -16,4 +16,7 @@ cómo trabajar con almacenamiento local y cómo obtener datos mediante una API.
 
 >### [3. Role Playing Game](03.role-playing-game):
 >- En este proyecto se han aprendido conceptos fundamentales de programación en JavaScript mediante la creación de mi propio juego de rol. Aprendiendo a trabajar con matrices, cadenas, objetos, funciones, bucles, instrucciones if/else y más.
+
+>### [4. Basic Debugging by Building a Random Background Color Changer](04.basic-debugging):
+>- La depuración (debugging) es el proceso de revisar el código, encontrar problemas y solucionarlos. En este proyecto, se ha creado un cambiador de color de fondo aleatorio para solucionar errores de un código ya escrito.
 >+ **Proyecto en desarrollo**
