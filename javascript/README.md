@@ -19,4 +19,7 @@ cómo trabajar con almacenamiento local y cómo obtener datos mediante una API.
 
 >### [4. Basic Debugging by Building a Random Background Color Changer](04.basic-debugging):
 >- La depuración (debugging) es el proceso de revisar el código, encontrar problemas y solucionarlos. En este proyecto, se ha creado un cambiador de color de fondo aleatorio para solucionar errores de un código ya escrito.
+
+>### [5. Calorie Counter](05.calorie-counter):
+>- todo
 >+ **Proyecto en desarrollo**
