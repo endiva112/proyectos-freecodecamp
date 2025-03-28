@@ -1,0 +1,16 @@
+body {
+    background-color: lightgrey;
+  }
+  
+  #nav-bar {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    display: flex;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
