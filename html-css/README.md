@@ -59,4 +59,8 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >### [17. Product Landing Page( Proyecto personal )](17.product-landing-page(certified_project)):
 >+ **Proyectos en desarrollo**
 >+ Este proyecto es mi solución personal a la prueba **evaluatoria**
->- Este proyecto está recién empezado...
+>- Este proyecto está siendo mejorado...
+
+>### [18. Animated Ferris Wheel](18.animated-ferris-wheel):
+>+ **Proyectos en desarrollo**
+>- Este proyecto codifico la animación de una noria. Se repasan las reglas de CSS que permiten animar elementos, transformarlos y ajustar su velocidad.
