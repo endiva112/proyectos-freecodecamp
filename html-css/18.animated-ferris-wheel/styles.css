@@ -1,1 +1,13 @@
 /*to do*/
+
+/*
+The transform-origin property is used to set the point around which a CSS transformation is applied. For example, when 
+performing a rotate (which you will do later in this project), the transform-origin determines around which point the 
+element is rotated.
+
+The animation-name property is used to link a @keyframes rule to a CSS selector. The value of this property should match the 
+name of the @keyframes rule. Give your .wheel selector an animation-name property set to wheel.
+
+The animation-duration property is used to set how long the animation should sequence to complete. The time should be specified 
+in either seconds (s) or milliseconds (ms).
+*/
