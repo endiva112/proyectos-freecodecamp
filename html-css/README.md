@@ -62,5 +62,4 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >- Este proyecto está siendo mejorado...
 
 >### [18. Animated Ferris Wheel](18.animated-ferris-wheel):
->+ **Proyectos en desarrollo**
 >- Este proyecto codifico la animación de una noria. Se repasan las reglas de CSS que permiten animar elementos, transformarlos y ajustar su velocidad.
