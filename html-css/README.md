@@ -63,3 +63,7 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 
 >### [18. Animated Ferris Wheel](18.animated-ferris-wheel):
 >- Este proyecto codifico la animación de una noria. Se repasan las reglas de CSS que permiten animar elementos, transformarlos y ajustar su velocidad.
+
+>### [19. Penguin](19.penguin):
+>+ **Proyectos en desarrollo**
+>- En este proyecto, he creado un pingüino. Se han usardo la propiedad "transform" de CSS para posicionar y redimensionar sus partes, crear un fondo y animar distintas partes.
