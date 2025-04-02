@@ -1,0 +1,27 @@
+:root {
+  --color1: #22577a;
+  --color2: #38a3a5;
+  --color3: #57cc99;
+  --color4: #80ed99;
+  --color5: #c7f9cc;
+  --color6: #5e6472;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--color1);
+  color: var(--color4);
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header *{
+  display: inherit;
+}
