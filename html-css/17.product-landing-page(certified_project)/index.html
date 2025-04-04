@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header id="header">
-      <img id="header-img" alt="logo" src="https://www.publicgoods.com/cdn/shop/products/MonsteraDeliciosa_PDP_01_800x.png?v=1663864397">
-      
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="shortcut icon" href="images/techfuel-icon-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <!--Fonts and stuff-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section id="home"></section>
+  <header id="header">
+    <div class="brand">
+      <img src="https://github.com/endiva112/proyectos-freecodecamp/blob/main/html-css/17.product-landing-page(certified_project)/images/techfuel-icon-logo.png?raw=true" alt="logo" id="header-img">
+      <div class="brand-name">Techfuel</div>
+    </div>
+    <div class="nav">
       <nav id="nav-bar">
-        <a class="nav-link" href="#a">Element A</a>
-        <a class="nav-link" href="#b">Element B</a>
-        <a class="nav-link" href="#c">Element C</a>
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#flavours">Flavours</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
-      <section>
-        <video id="video" alt="video" src="google.com"/>
-      </section>
-      <section>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input id="email" type="email" placeholder="email here" name="email">
-          <input id="submit" type="submit">
-        </form>
-      </section>
-      <section id="a">
+    </div>
+  </header>
+  <section class="hero">
+    <!--Lata chula-->
+    <div class="banner">
+      <div class="product">
+        <div class="soda"></div>
+      </div>
 
-      </section>
-      <section id="b">
+      <div class="name">
+        <h1>New Flavour out!</h1>
+      </div>
 
-      </section>
-      <section id="c">
+      <!-- <div class="column">
+        <img src="columna-antigua.png" alt="">
+        <img src="rock1.png" alt="">
+        <img src="rock2.pmg" alt="">
+        <img src="rock3.png" alt="">
+      </div> -->
+    </div>
+  </section>
 
-      </section>
-    </header>
-  </body>
+  <!--Flavours section-->
+  <section class="grid" id="flavours">
+    <div class="item">
+      <div class="flavourtext">Docker Naranja!</div>
+      <div class="flavour"></div>
+    </div>
+    <div class="item">
+      <div class="flavourtext">Kernel Kiwi!</div>
+      <div class="flavour"></div>
+    </div>
+    <div class="item">
+      <div class="flavourtext">Mongo Mora!</div>
+      <div class="flavour"></div>
+    </div>
+    <div class="item">
+      <div class="flavourtext">Pixel Pomelo!</div>
+      <div class="flavour"></div>
+    </div>
+    <div class="item">
+      <div class="flavourtext">Node Mint!</div>
+      <div class="flavour"></div>
+    </div>
+    <div class="item">
+      <div class="flavourtext">Figma Frambuesa!</div>
+      <div class="flavour"></div>
+    </div>
+  </section>
+  <!--Contact section-->
+
+  <section>
+    <video id="video" alt="video" src="google.com"/>
+  </section>
+
+  <section id="contact">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" placeholder="email here" name="email">
+      <input id="submit" type="submit">
+    </form>
+  </section>
+</body>
+
 </html>
