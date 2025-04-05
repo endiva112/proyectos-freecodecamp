@@ -57,9 +57,8 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >- En este curso, he creado un artículo para una revista. Aprendiendo a usar CSS Grid, incluidos conceptos como grid rows y grid columns.
 
 >### [17. Product Landing Page( Proyecto personal )](17.product-landing-page(certified_project)):
->+ **Proyectos en desarrollo**
 >+ Este proyecto es mi solución personal a la prueba **evaluatoria**
->- Este proyecto está siendo mejorado...
+>- En este proyecto, he creado una landing page para una empresa que hace ebidas energéticas, he usago css grid y animaciones como puntos claves a repasar
 
 >### [18. Animated Ferris Wheel](18.animated-ferris-wheel):
 >- Este proyecto codifico la animación de una noria. Se repasan las reglas de CSS que permiten animar elementos, transformarlos y ajustar su velocidad.
@@ -67,6 +66,6 @@ Esta carpeta contiene todos los proyectos creados durante mi aprendizaje en Free
 >### [19. Penguin](19.penguin):
 >- En este proyecto, he creado un pingüino. Se han usardo la propiedad "transform" de CSS para posicionar y redimensionar sus partes, crear un fondo y animar distintas partes.
 
->### [20. TO DO):
+>### [20. TO DO]:
 >+ **Proyectos en desarrollo**
 >+ Este proyecto es mi solución personal a la prueba **evaluatoria**
