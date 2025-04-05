@@ -199,6 +199,9 @@ header * {
 /*VIDEO*/
 #video {
   margin: 0 auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 #video p {
@@ -209,11 +212,28 @@ header * {
 }
 
 #video video {
-  width: auto;
-  height: 50vh;
+  width: 90%;
+  height: auto;
+}
+/*VIDEO END*/
+
+/*CONTACT*/
+#contact {
+  margin: 0 auto;
 }
 
-/*VIDEO END*/
+#contact p {
+  font-family: Satisfy;
+  font-size: 2vw;
+  text-align: center;
+  color: var(--color5);
+}
+
+#contact form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*CONTACT END*/
 
 /*FOOTER*/
 footer {
@@ -267,6 +287,7 @@ footer a:active {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    height: auto;
   }
 
   .flavourtext {
