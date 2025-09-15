@@ -7,9 +7,12 @@ const output = document.getElementById('output');
 let isError = false;
 
 function cleanInputString(str) {
-  console.log("original string: ", str)
   const regex = /[+-\s]/g;
   return str.replace(regex, '');
 }
 
-console.log(cleanInputString("+-99"));
+function isInvalidInput(str) {
+  const regex = /\d+e\d+/i;//La e esta puesta porque la gente podria introducir numeros elevados a 2e10 por ejemplo y eso no interesa
+  //Esta i, permite que el regex funcione de forma no sensible a las mayusculas, por lo que se aplica para e y E
+  //En los regex \d es equivalente a [0-9] (todos los números)
+}
