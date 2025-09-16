@@ -16,3 +16,24 @@ function isInvalidInput(str) {
   //Esta i, permite que el regex funcione de forma no sensible a las mayusculas, por lo que se aplica para e y E
   //En los regex \d es equivalente a [0-9] (todos los números)
 }
+
+function addEntry() {
+  const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`); 
+  /* JavaScript has a feature called template literals, which allow you to interpolate variables directly within a string. 
+  Template literals are denoted with backticks ``,   as opposed to single or double quotes. Variables can be passed in to 
+  a template literal by surrounding the variable with ${} – the value of the variable will be inserted into the string.*/
+  const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
+  const HTMLString = `
+  <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
+  <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+  <input
+    type="number"
+    min="0"
+    id="${entryDropdown.value}-${entryNumber}-calories"
+    placeholder="Calories"
+  />`;
+  targetInputContainer.innerHTML += HTMLString;
+}
+
+addEntryButton.addEventListener("click", addEntry);
