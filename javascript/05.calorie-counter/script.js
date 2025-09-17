@@ -22,7 +22,7 @@ function addEntry() {
   /* JavaScript has a feature called template literals, which allow you to interpolate variables directly within a string. 
   Template literals are denoted with backticks ``,   as opposed to single or double quotes. Variables can be passed in to 
   a template literal by surrounding the variable with ${} – the value of the variable will be inserted into the string.*/
-  const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
+  const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
   const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
@@ -33,7 +33,39 @@ function addEntry() {
     id="${entryDropdown.value}-${entryNumber}-calories"
     placeholder="Calories"
   />`;
-  targetInputContainer.innerHTML += HTMLString;
+  //targetInputContainer.innerHTML += HTMLString; esto no nos sirve, porque elimina los datos insertados en el elemento creado anteriormente, usaremos lo de abajo:
+  targetInputContainer.insertAdjacentHTML("beforeend",  HTMLString);
+}
+
+function calculateCalories(e) {
+  e.preventDefault();
+  isError = false;
+
+  const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type='number']");
+  const lunchNumberInputs = document.querySelectorAll("#lunch input[type='number']");
+  const dinnerNumberInputs = document.querySelectorAll("#dinner input[type='number']");
+  const snacksNumberInputs = document.querySelectorAll("#snacks input[type='number']");
+  const exerciseNumberInputs = document.querySelectorAll("#exercise input[type='number']");
+
+  const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+
+}
+
+function getCaloriesFromInputs(list) {
+  let calories = 0;
+
+  for (const item of list) {
+    const currVal = cleanInputString(item.value);
+    const invalidInputMatch = isInvalidInput(currVal);
+
+    if (invalidInputMatch) {
+      alert(`Invalid Input: ${invalidInputMatch[0]}`);
+      isError = true;
+      return null;
+    }
+    calories += Number(currVal);
+  }
+  return calories;
 }
 
 addEntryButton.addEventListener("click", addEntry);
