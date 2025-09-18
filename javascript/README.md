@@ -21,5 +21,8 @@ cómo trabajar con almacenamiento local y cómo obtener datos mediante una API.
 >- La depuración (debugging) es el proceso de revisar el código, encontrar problemas y solucionarlos. En este proyecto, se ha creado un cambiador de color de fondo aleatorio para solucionar errores de un código ya escrito.
 
 >### [5. Calorie Counter](05.calorie-counter):
->- todo
+>- En este proyecto, se ha creado un contador de calorías, se repasa como validar la entrada del usuario, realizar cálculos basados ​​en ella y actualizar dinámicamente la interfaz para mostrar los resultados de dichos calculos. Principalmente sirve para repasar el uso de expresiones regulares básicas, literales de plantilla (template literals), y el método addEventListener().
+
+>### [6. DOM Manipulation by Building a Rock, Paper, Scissors Game](06.rock-paper-scissors):
+>- TO DO
 >+ **Proyecto en desarrollo**
