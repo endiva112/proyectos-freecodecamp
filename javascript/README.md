@@ -17,12 +17,16 @@ cómo trabajar con almacenamiento local y cómo obtener datos mediante una API.
 >### [3. Role Playing Game](03.role-playing-game):
 >- En este proyecto se han aprendido conceptos fundamentales de programación en JavaScript mediante la creación de mi propio juego de rol. Aprendiendo a trabajar con matrices, cadenas, objetos, funciones, bucles, instrucciones if/else y más.
 
->### [4. Basic Debugging by Building a Random Background Color Changer](04.basic-debugging):
+>### [4. Random Background Color Changer](04.basic-debugging):
 >- La depuración (debugging) es el proceso de revisar el código, encontrar problemas y solucionarlos. En este proyecto, se ha creado un cambiador de color de fondo aleatorio para solucionar errores de un código ya escrito.
 
 >### [5. Calorie Counter](05.calorie-counter):
 >- En este proyecto, se ha creado un contador de calorías, se repasa como validar la entrada del usuario, realizar cálculos basados ​​en ella y actualizar dinámicamente la interfaz para mostrar los resultados de dichos calculos. Principalmente sirve para repasar el uso de expresiones regulares básicas, literales de plantilla (template literals), y el método addEventListener().
 
->### [6. DOM Manipulation by Building a Rock, Paper, Scissors Game](06.rock-paper-scissors):
+>### [6. Rock, Paper, Scissors Game](06.rock-paper-scissors):
+>- Los proyectos anteriores sirvieron para aprender a trabajar con la manipulación básica del DOM. En este, se repasa lo aprendido creando un juego de piedra, papel o tijera.
+En este miniproyecto, se repasa el uso de condicionales, funciones y getElementById entre otros, para asentar los conceptos básicos.
+
+>### [7. Music Player](07.music-player):
 >- TO DO
 >+ **Proyecto en desarrollo**
