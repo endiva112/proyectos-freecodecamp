@@ -154,7 +154,20 @@ const renderSongs = (array) => {
 };
 
 const sortSongs = () => {
+  //Optional chaining (?.) sirve para acceder al valor, igual que el . ejemplo Persona.nombredelapersona da el nombre de la persona, pero peta si este es null o no esta inicializado, con el ?. ya no peta
+  userData?.songs.sort((a,b) => {//En js los strings se comparan gramaticalmente a es < que b porque a viene antes que b, la funcion devuelve numeros porque sort espera numeros, un num negativo implica que el iteam a es < que el b
+    if (a.title < b.title) {
+      return -1;
+    }
 
+    if (a.title > b.title) {
+      return 1;
+    }
+
+    return 0;
+  });
+
+  return userData?.songs;
 };
 
-renderSongs(userData?.songs); //Optional chaining (?.) helps prevent errors when accessing nested properties that might be null or undefined.
+renderSongs(sortSongs()); 
