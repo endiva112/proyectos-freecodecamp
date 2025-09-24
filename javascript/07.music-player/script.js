@@ -146,12 +146,19 @@ const playSong = (id) => {
   audio.play();
 };
 
+const pauseSong = () => {
+  userData.songCurrentTime = audio.currentTime;
+  
+  playButton.classList.remove("playing");
+  audio.pause();
+};
+
 const renderSongs = (array) => {
   const songsHTML = array
     .map((song)=> {
       return `
       <li id="song-${song.id}" class="playlist-song">
-      <button class="playlist-song-info">
+      <button class="playlist-song-info" onclick="playSong(${song.id})">
           <span class="playlist-song-title">${song.title}</span>
           <span class="playlist-song-artist">${song.artist}</span>
           <span class="playlist-song-duration">${song.duration}</span>
@@ -168,16 +175,20 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+
+
 playButton.addEventListener("click", () => {
-  if (userData?.currentSong === null) {
+    if (userData?.currentSong === null) {
     playSong(userData?.songs[0].id);
-  }else {
+  } else {
     playSong(userData?.currentSong.id);
   }
 });
 
+pauseButton.addEventListener("click",  pauseSong);
+
 const sortSongs = () => {
-  //Optional chaining (?.) sirve para acceder al valor, igual que el . ejemplo Persona.nombredelapersona da el nombre de la persona, pero peta si este es null o no esta inicializado, con el ?. ya no peta
+    //Optional chaining (?.) sirve para acceder al valor, igual que el . ejemplo Persona.nombredelapersona da el nombre de la persona, pero peta si este es null o no esta inicializado, con el ?. ya no peta
   userData?.songs.sort((a,b) => {//En js los strings se comparan gramaticalmente a es < que b porque a viene antes que b, la funcion devuelve numeros porque sort espera numeros, un num negativo implica que el iteam a es < que el b
     if (a.title < b.title) {
       return -1;
@@ -193,4 +204,4 @@ const sortSongs = () => {
   return userData?.songs;
 };
 
-renderSongs(sortSongs()); 
+renderSongs(sortSongs());
