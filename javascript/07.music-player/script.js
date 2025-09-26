@@ -175,7 +175,8 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
-
+//The indexOf() array method returns the first index at which a given element can be found in the array, or -1 if the element is not present.
+const getCurrentSongIndex = () => userData?.songs.indexOf(userData?.currentSong);
 
 playButton.addEventListener("click", () => {
     if (userData?.currentSong === null) {
